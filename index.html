@@ -1,0 +1,1191 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Matematik 7 · 1. Yazılı Hazırlık</title>
+<meta name="description" content="7. sınıf Matematik 1. dönem 1. yazılı: rasyonel sayılar konu özeti, MEB örnek soruları ve çözümleri (Arapça anlatım).">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@600;700;800&family=Lexend:wght@400;500;600;700&family=Readex+Pro:wght@400;500;600;700&display=swap">
+<script>try{var t=localStorage.getItem('m7-theme');if(t)document.documentElement.dataset.theme=JSON.parse(t)}catch(e){}</script>
+<style>
+/* Arabic page (RTL). Turkish words and all math are LTR-isolated islands (.t, .m, .tq).
+   Four lesson colours follow the four exam outcomes MAT.7.1.1-7.1.4. */
+:root{
+  --bg:#eef2f7;--surface:#fff;--surface-2:#f4f6fa;--ink:#17203a;--ink-2:#465169;--ink-3:#6f7a92;--line:#d6dce6;
+  --pen:#2343c4;--pen-bg:#e6ebff;--ok:#0d7a45;--ok-bg:#dcf2e5;--red:#c4202f;--red-bg:#fde7e8;--warn:#a85a00;--warn-bg:#fdf0d8;
+  --sheet:#fffefa;--sheet-line:#e2ddd0;
+  --t1:#7338d0;--t2:#1b66cc;--t3:#cf5310;--t4:#0b8573;--on-tc:#fff;
+  --shadow:0 1px 2px rgba(23,32,58,.06),0 8px 22px rgba(23,32,58,.07);
+  --f-ar:"Readex Pro","Segoe UI",Tahoma,sans-serif;--f-disp:"Baloo Bhaijaan 2","Readex Pro","Segoe UI",Tahoma,sans-serif;
+  --f-tr:"Lexend","Segoe UI",system-ui,sans-serif;color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){
+  --bg:#0e1320;--surface:#151c2b;--surface-2:#1b2435;--ink:#e7ebf4;--ink-2:#b0b9cc;--ink-3:#8a95ab;--line:#29334a;
+  --pen:#93a6ff;--pen-bg:rgba(120,140,255,.16);--ok:#52d38f;--ok-bg:rgba(60,200,120,.14);--red:#ff7a85;--red-bg:rgba(255,95,110,.13);--warn:#fbbf5a;--warn-bg:rgba(245,170,40,.14);
+  --sheet:#1d2232;--sheet-line:#343b50;
+  --t1:#b08cff;--t2:#6ea8ff;--t3:#ff9a5a;--t4:#45d0b8;--on-tc:#0e1320;
+  --shadow:0 1px 2px rgba(0,0,0,.35),0 8px 24px rgba(0,0,0,.3);color-scheme:dark}}
+:root[data-theme=dark]{
+  --bg:#0e1320;--surface:#151c2b;--surface-2:#1b2435;--ink:#e7ebf4;--ink-2:#b0b9cc;--ink-3:#8a95ab;--line:#29334a;
+  --pen:#93a6ff;--pen-bg:rgba(120,140,255,.16);--ok:#52d38f;--ok-bg:rgba(60,200,120,.14);--red:#ff7a85;--red-bg:rgba(255,95,110,.13);--warn:#fbbf5a;--warn-bg:rgba(245,170,40,.14);
+  --sheet:#1d2232;--sheet-line:#343b50;
+  --t1:#b08cff;--t2:#6ea8ff;--t3:#ff9a5a;--t4:#45d0b8;--on-tc:#0e1320;
+  --shadow:0 1px 2px rgba(0,0,0,.35),0 8px 24px rgba(0,0,0,.3);color-scheme:dark}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:64px}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.75 var(--f-ar)}
+p{margin:0 0 .6em}
+b{font-weight:700}
+.wrap{max-width:880px;margin:0 auto;padding:0 16px}
+.m{direction:ltr;unicode-bidi:isolate;white-space:nowrap;font-family:var(--f-tr);font-weight:600;font-variant-numeric:tabular-nums;font-size:.93em}
+.t{direction:ltr;unicode-bidi:isolate;font-family:var(--f-tr);font-weight:600;font-size:.92em;color:var(--pen)}
+.fr{display:inline-flex;flex-direction:column;align-items:stretch;vertical-align:middle;line-height:1.08;font-size:.8em;margin-inline:.1em;direction:ltr;font-family:var(--f-tr);font-weight:600;text-align:center}
+.fr>span{display:block;padding-inline:.16em}
+.fr>span:first-child{border-bottom:.1em solid currentColor;padding-bottom:.06em}
+.fr>span:last-child{padding-top:.06em}
+.mx{display:inline-flex;align-items:center;gap:.06em;direction:ltr;vertical-align:middle}
+.fr .fr{font-size:1em}
+.ov{text-decoration:overline;text-decoration-thickness:.09em}
+sup{font-size:.7em;line-height:0}
+
+/* top bar */
+.top{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--surface) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;gap:8px;height:56px}
+.top nav{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;flex:1}
+.top nav::-webkit-scrollbar{display:none}
+.top nav a{flex:none;text-decoration:none;color:var(--ink-2);font-size:.85rem;font-weight:600;padding:5px 12px;border-radius:999px;border:1px solid var(--line);white-space:nowrap}
+.top nav a[style]{border-color:color-mix(in srgb,var(--tc) 45%,var(--line));color:var(--tc)}
+.top nav a.done::after{content:" ✓"}
+.icon-btn{flex:none;width:38px;height:38px;border-radius:50%;border:1px solid var(--line);background:var(--surface-2);color:var(--ink);font-size:1.05rem;cursor:pointer}
+
+/* hero */
+.hero{padding:34px 0 10px}
+.kicker{font-family:var(--f-tr);font-size:.78rem;letter-spacing:.14em;color:var(--ink-3);font-weight:600;direction:ltr;text-align:right;margin:0}
+h1{font-family:var(--f-disp);font-size:clamp(1.9rem,6vw,2.7rem);line-height:1.2;margin:4px 0 10px}
+.lead{font-size:1.08rem;color:var(--ink-2)}
+.exam{display:grid;gap:12px;background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:16px;box-shadow:var(--shadow);margin-top:16px}
+.exam h2{margin:0;font-size:1.1rem}
+.exam p{margin:0;color:var(--ink-2)}
+.lessons{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.lessons a{--tc:var(--t1);display:grid;gap:2px;text-decoration:none;color:var(--ink);background:color-mix(in srgb,var(--tc) 10%,var(--surface));border:1.5px solid color-mix(in srgb,var(--tc) 35%,transparent);border-radius:14px;padding:10px 12px}
+.lessons .n{font-family:var(--f-disp);font-size:1.6rem;line-height:1;color:var(--tc)}
+.lessons b{font-size:.95rem}
+.lessons .t{font-size:.72rem;color:var(--tc)}
+.lessons small{font-size:.78rem;color:var(--ink-3)}
+.how{display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0;list-style:none;counter-reset:h}
+.how li{counter-increment:h;display:flex;align-items:center;gap:6px;background:var(--surface-2);border-radius:999px;padding:4px 12px 4px 6px;font-size:.88rem}
+.how li::before{content:counter(h);width:22px;height:22px;border-radius:50%;background:var(--ink);color:var(--surface);display:grid;place-items:center;font-size:.75rem;font-weight:700}
+details.plan summary{cursor:pointer;color:var(--ink-3);font-size:.88rem}
+.tbl{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:.9rem}
+th,td{border:1px solid var(--line);padding:6px 9px;text-align:center}
+th{background:var(--surface-2);font-weight:600}
+
+/* lessons */
+.lesson{--tc:var(--t1);padding:30px 0 6px}
+.lh{display:flex;gap:14px;align-items:center;margin-bottom:14px}
+.lh .n{flex:none;width:58px;height:58px;border-radius:18px;background:var(--tc);color:var(--on-tc);display:grid;place-items:center;font-family:var(--f-disp);font-size:2rem;font-weight:800}
+.lh h2{margin:0;font-family:var(--f-disp);font-size:1.6rem;line-height:1.25}
+.lh .sub{display:flex;flex-wrap:wrap;gap:6px 10px;align-items:center;font-size:.85rem;color:var(--ink-3)}
+.lh .sub .t{color:var(--tc)}
+.chip{background:color-mix(in srgb,var(--tc) 14%,transparent);color:var(--tc);border-radius:999px;padding:0 10px;font-weight:600}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:18px;margin-bottom:14px;box-shadow:var(--shadow)}
+.card>h3{display:flex;align-items:center;gap:8px;margin:0 0 10px;font-size:1.15rem}
+.card>h3 .k{flex:none;font-family:var(--f-tr);font-size:.75rem;font-weight:700;color:var(--on-tc);background:var(--tc);border-radius:8px;padding:1px 7px}
+.card>h3 .t{color:var(--tc);font-size:.8rem;margin-inline-start:auto}
+ul.dots{margin:0 0 .6em;padding-inline-start:20px}
+ul.dots li{margin-bottom:4px}
+ul.dots li::marker{color:var(--tc)}
+.rule{background:color-mix(in srgb,var(--tc) 9%,var(--surface));border-inline-start:5px solid var(--tc);border-radius:12px;padding:12px 14px;margin:10px 0}
+.rule>b:first-child{display:block;color:var(--tc);margin-bottom:4px}
+.rule ol{margin:0;padding-inline-start:20px}
+.rule li{margin-bottom:4px}
+.trap{background:var(--warn-bg);border-inline-start:5px solid var(--warn);border-radius:12px;padding:12px 14px;margin:10px 0}
+.trap>b:first-child{display:block;color:var(--warn);margin-bottom:4px}
+.trap ul{margin:0;padding-inline-start:20px}
+.eq{direction:ltr;text-align:center;font-family:var(--f-tr);font-weight:600;font-size:1.15rem;line-height:2.2;background:var(--surface-2);border-radius:12px;padding:6px 10px;margin:8px 0;overflow-x:auto;white-space:pre}
+.eq .fr{font-size:.82em}
+.note{color:var(--ink-3);font-size:.9rem}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.mini{background:var(--surface-2);border-radius:12px;padding:10px 12px}
+.mini b{color:var(--tc)}
+svg.fig{display:block;width:100%;height:auto;direction:ltr;margin:6px 0}
+svg.fig text{font-family:var(--f-tr);font-weight:600;fill:var(--ink)}
+.fig .axis{stroke:var(--ink-2);stroke-width:2}
+.fig .tick{stroke:var(--ink-2);stroke-width:2}
+.fig .mut{fill:var(--ink-3)}
+.fig .acc{fill:var(--tc)}
+.fig .accs{stroke:var(--tc)}
+.pm{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--line);border-radius:12px;overflow:hidden;font-size:.92rem}
+.pm>div{padding:7px 12px;border-top:1px solid var(--line)}
+.pm>div:nth-child(-n+2){border-top:0;font-weight:700}
+.pm>div:nth-child(odd){background:var(--ok-bg)}
+.pm>div:nth-child(even){background:var(--red-bg);border-inline-start:1px solid var(--line)}
+
+/* Turkish question blocks, solutions */
+.ob{border:1.5px solid color-mix(in srgb,var(--tc) 35%,var(--line));border-radius:16px;padding:14px;margin:12px 0;background:var(--surface)}
+.ob-h{display:flex;align-items:center;gap:8px;font-weight:700;font-size:.92rem;margin:0 0 8px;color:var(--ink-2)}
+.badge{font-family:var(--f-tr);font-size:.72rem;font-weight:700;background:var(--tc);color:var(--on-tc);border-radius:7px;padding:2px 8px}
+.badge.alt{background:var(--ink-3)}
+.tq{direction:ltr;text-align:left;font-family:var(--f-tr);font-size:.95rem;line-height:1.75;background:var(--sheet);border:1px solid var(--sheet-line);border-radius:12px;padding:10px 14px}
+.tq p{margin:0 0 .4em}
+.tq p:last-child{margin:0}
+.tq .ask{font-weight:700}
+.tq table{margin:6px 0;font-size:.85rem}
+.tq .fr{font-size:.85em}
+details.sol{margin-top:10px}
+details.sol>summary{display:inline-flex;align-items:center;gap:6px;cursor:pointer;list-style:none;font-weight:700;font-size:.9rem;color:var(--tc);background:color-mix(in srgb,var(--tc) 12%,transparent);border-radius:999px;padding:4px 14px}
+details.sol>summary::-webkit-details-marker{display:none}
+details.sol>summary::after{content:"▾"}
+details.sol[open]>summary::after{content:"▴"}
+details.sol>div{margin-top:10px;padding-inline-start:4px}
+ol.steps{margin:0 0 8px;padding-inline-start:22px}
+ol.steps li{margin-bottom:6px}
+ol.steps li::marker{color:var(--tc);font-weight:700}
+.ans{white-space:pre-wrap;direction:ltr;text-align:left;font-family:var(--f-tr);font-weight:600;color:var(--pen);background:var(--pen-bg);border-left:4px solid var(--pen);border-radius:0 10px 10px 0;padding:6px 12px;margin:6px 0 0}
+.ans .fr{font-size:.85em}
+.prac{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.pq{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:12px}
+.pq .tq{font-size:.88rem;padding:8px 11px}
+.pq .num{font-family:var(--f-tr);font-size:.72rem;color:var(--ink-3);font-weight:600}
+.pq details.sol>div{font-size:.92rem}
+h3.sec{display:flex;align-items:center;gap:8px;margin:20px 0 8px;font-size:1.05rem}
+h3.sec::before{content:"";width:10px;height:10px;border-radius:3px;background:var(--tc)}
+
+/* widgets */
+.tool{background:var(--surface-2);border:1.5px dashed color-mix(in srgb,var(--tc) 50%,var(--line));border-radius:16px;padding:14px;margin:12px 0}
+.tool>b:first-child{display:block;margin-bottom:8px}
+.btn{font:inherit;font-size:.88rem;font-weight:600;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:5px 14px;cursor:pointer}
+.btn.pri{background:var(--tc);border-color:var(--tc);color:var(--on-tc)}
+.btn[aria-pressed=true]{background:var(--tc);border-color:var(--tc);color:var(--on-tc)}
+.row-btns{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.out{margin-top:8px;min-height:1.6em;font-weight:600}
+.fam{direction:ltr;display:grid;gap:6px}
+.fam-row,.fam-head{display:grid;grid-template-columns:1.2fr repeat(3,1fr);gap:6px;align-items:center}
+.fam-head span{font-family:var(--f-tr);font-size:.8rem;font-weight:700;text-align:center;color:var(--ink-2)}
+.fam-row{background:var(--surface);border:1.5px solid var(--line);border-radius:12px;padding:6px 8px}
+.fam-row .v{font-family:var(--f-tr);font-weight:600;text-align:center;font-size:1.1rem}
+.fam-row button{height:38px;border-radius:10px;border:1.5px solid var(--line);background:var(--surface-2);font-size:1.1rem;cursor:pointer;color:transparent}
+.fam-row button[aria-pressed=true]{background:var(--tc);border-color:var(--tc);color:var(--on-tc)}
+.fam-row .why{grid-column:1/-1;display:none;direction:rtl;font-size:.85rem;color:var(--ink-2);text-align:right}
+.fam-row.ok{border-color:var(--ok);background:var(--ok-bg)}
+.fam-row.no{border-color:var(--red);background:var(--red-bg)}
+.fam-row.ok .why,.fam-row.no .why{display:block}
+.picks{display:flex;flex-wrap:wrap;gap:8px;direction:ltr;justify-content:center}
+.picks .btn{font-family:var(--f-tr);font-size:1.05rem;padding:4px 12px}
+.picks .btn .fr{font-size:.8em}
+.sd{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:8px}
+.sd-card,.pair{background:var(--surface);border:1.5px solid var(--line);border-radius:12px;padding:8px;text-align:center}
+.sd-card .v{font-family:var(--f-tr);font-weight:600;font-size:1.25rem;direction:ltr}
+.sd-card .bt{display:flex;gap:6px;justify-content:center;margin-top:4px}
+.sd-card .btn{font-family:var(--f-tr);font-size:.78rem;padding:3px 10px}
+.why2{display:none;font-size:.82rem;color:var(--ink-2);margin-top:4px}
+.sd-card.ok,.pair.ok{border-color:var(--ok);background:var(--ok-bg)}
+.sd-card.no,.pair.no{border-color:var(--red);background:var(--red-bg)}
+.sd-card.ok .why2,.sd-card.no .why2,.pair.ok .why2,.pair.no .why2{display:block}
+.cmp{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:8px}
+.pair .bt{display:flex;align-items:center;justify-content:center;gap:10px;direction:ltr}
+.pair .btn{font-family:var(--f-tr);font-size:1.1rem;padding:4px 12px;min-width:64px}
+.pair .btn .fr{font-size:.8em}
+.pair .btn.win{background:var(--ok);border-color:var(--ok);color:#fff}
+.pair .vs{color:var(--ink-3);font-size:.8rem}
+.done-btn{display:flex;justify-content:center;margin:6px 0 0}
+.done-btn button{font:inherit;font-weight:700;border:2px solid var(--tc);color:var(--tc);background:transparent;border-radius:999px;padding:8px 22px;cursor:pointer}
+.done-btn button[aria-pressed=true]{background:var(--tc);color:var(--on-tc)}
+.done-btn button[aria-pressed=true]::before{content:"✓ "}
+
+/* phrases, glossary, checklist */
+.phr{display:grid;gap:8px}
+.phr>div{display:grid;grid-template-columns:1.25fr 1fr;direction:ltr;background:var(--surface);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.phr .tr{font-family:var(--f-tr);font-weight:600;padding:9px 12px;font-size:.92rem}
+.phr .ar{direction:rtl;text-align:right;padding:9px 12px;background:var(--surface-2);font-size:.9rem;color:var(--ink-2)}
+.gl{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:6px;margin:0;padding:0;list-style:none}
+.gl li{display:flex;justify-content:space-between;gap:10px;align-items:baseline;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:6px 12px;font-size:.9rem}
+.gl li .t{color:var(--ink);order:2}
+.gl li span:last-child{color:var(--ink-2)}
+.check{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+.check label{display:flex;gap:10px;align-items:flex-start;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:9px 12px;cursor:pointer}
+.check input{width:20px;height:20px;margin-top:4px;accent-color:var(--ok);flex:none}
+.check input:checked+span{color:var(--ink-3);text-decoration:line-through}
+footer{padding:28px 0 40px;text-align:center;color:var(--ink-3);font-size:.85rem}
+
+@media (max-width:700px){
+  body{font-size:16px}
+  .lessons{grid-template-columns:1fr 1fr}
+  .grid2,.prac{grid-template-columns:1fr}
+  .card{padding:14px}
+  .lh .n{width:48px;height:48px;font-size:1.6rem;border-radius:14px}
+  .lh h2{font-size:1.3rem}
+  .phr>div{grid-template-columns:1fr}
+  .phr .ar{direction:rtl}
+  table{font-size:.8rem}
+  th,td{padding:5px 6px}
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <nav aria-label="الدروس">
+      <a href="#d1" style="--tc:var(--t1)">1 · الأعداد</a>
+      <a href="#d2" style="--tc:var(--t2)">2 · العشري</a>
+      <a href="#d3" style="--tc:var(--t3)">3 · الترتيب</a>
+      <a href="#d4" style="--tc:var(--t4)">4 · العمليات</a>
+      <a href="#yaz">جمل الامتحان</a>
+      <a href="#sozluk">القاموس</a>
+      <a href="#son">قبل الامتحان</a>
+    </nav>
+    <button class="icon-btn" id="theme" type="button" title="الوضع الفاتح / الداكن" aria-label="الوضع الفاتح / الداكن">◐</button>
+  </div>
+</header>
+
+<main class="wrap">
+<section class="hero">
+  <p class="kicker">MATEMATİK 7 · 1. DÖNEM 1. YAZILI</p>
+  <h1>كل ما يلزمك لامتحان الرياضيات</h1>
+  <p class="lead">الامتحان كله عن الأعداد، وخاصة الأعداد النسبية <span class="t" lang="tr">Rasyonel sayılar</span>. قسّمناه إلى <b>4 دروس قصيرة</b>. في كل درس: القاعدة، ثم مثال، ثم أسئلة من كتيّب الوزارة مع حلها، ثم تمارين.</p>
+
+  <div class="exam">
+    <h2>📝 شكل الامتحان</h2>
+    <p><b>5 إلى 7 أسئلة مكتوبة</b>: تكتب الحل بيدك وتشرح السبب. من كل درس يأتي <b>سؤال أو سؤالان</b>، فلا تترك أي درس.</p>
+    <div class="lessons">
+      <a href="#d1" style="--tc:var(--t1)"><span class="n">1</span><b>أنواع الأعداد</b><span class="t">Doğal · Tam · Rasyonel</span><small>1–2 سؤال</small></a>
+      <a href="#d2" style="--tc:var(--t2)"><span class="n">2</span><b>الكتابة العشرية</b><span class="t">Ondalık gösterim</span><small>1–2 سؤال</small></a>
+      <a href="#d3" style="--tc:var(--t3)"><span class="n">3</span><b>المقارنة والترتيب</b><span class="t">Karşılaştırma · Sıralama</span><small>1–2 سؤال</small></a>
+      <a href="#d4" style="--tc:var(--t4)"><span class="n">4</span><b>العمليات والمسائل</b><span class="t">İşlemler · Problemler</span><small>1–2 سؤال</small></a>
+    </div>
+    <ol class="how">
+      <li>اقرأ القاعدة</li>
+      <li>حلّ السؤال على ورقة قبل أن تفتح الحل</li>
+      <li>افتح الحل وقارن</li>
+      <li>في اليوم الأخير: جمل الامتحان + القاموس</li>
+    </ol>
+    <details class="plan">
+      <summary>جدول توزيع الأسئلة الرسمي (سيناريوهات الوزارة)</summary>
+      <div class="tbl" style="margin-top:8px">
+        <table>
+          <tr><th>الدرس</th><th>سيناريو 1</th><th>سيناريو 2</th><th>سيناريو 3</th><th>سيناريو 4</th></tr>
+          <tr><td>1 · <span class="m">MAT.7.1.1</span></td><td>1</td><td>1</td><td>2</td><td>2</td></tr>
+          <tr><td>2 · <span class="m">MAT.7.1.2</span></td><td>2</td><td>1</td><td>2</td><td>2</td></tr>
+          <tr><td>3 · <span class="m">MAT.7.1.3</span></td><td>2</td><td>1</td><td>2</td><td>2</td></tr>
+          <tr><td>4 · <span class="m">MAT.7.1.4</span></td><td>2</td><td>2</td><td>1</td><td>–</td></tr>
+          <tr><th>المجموع</th><th>7</th><th>5</th><th>7</th><th>6</th></tr>
+        </table>
+      </div>
+      <p class="note" style="margin-top:6px">المدرسة تختار سيناريو واحداً. الأرقام تعني عدد الأسئلة من كل درس.</p>
+    </details>
+  </div>
+</section>
+
+<!-- ======================= LESSON 1 ======================= -->
+<section class="lesson" id="d1" style="--tc:var(--t1)">
+  <div class="lh">
+    <span class="n">1</span>
+    <div>
+      <h2>أنواع الأعداد</h2>
+      <div class="sub"><span class="t">Doğal, tam ve rasyonel sayılar</span><span class="m">MAT.7.1.1</span><span class="chip">1–2 سؤال</span></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3><span class="k">1.1</span>ثلاث عائلات من الأعداد</h3>
+    <ul class="dots">
+      <li><b><span class="t" lang="tr">Doğal sayılar</span> الأعداد الطبيعية:</b> <span class="m">0, 1, 2, 3, …</span>. تبدأ من الصفر. لا سالب ولا كسور.</li>
+      <li><b><span class="t" lang="tr">Tam sayılar</span> الأعداد الصحيحة:</b> <span class="m">…, −3, −2, −1, 0, 1, 2, 3, …</span>. هي الطبيعية مع السالبة.</li>
+      <li><b><span class="t" lang="tr">Rasyonel sayılar</span> الأعداد النسبية:</b> كل عدد نستطيع كتابته كسراً <span class="m"><span class="fr"><span>a</span><span>b</span></span></span> بشرط أن المقام <span class="m">b ≠ 0</span>. مثل <span class="m"><span class="fr"><span>3</span><span>4</span></span></span> و <span class="m">−<span class="fr"><span>2</span><span>5</span></span></span> و <span class="m">0,2</span> و <span class="m">−5</span>.</li>
+    </ul>
+    <svg class="fig" viewBox="0 0 520 250" role="img" aria-label="الطبيعية داخل الصحيحة، والصحيحة داخل النسبية">
+      <ellipse cx="260" cy="125" rx="252" ry="120" style="fill:color-mix(in srgb,var(--t1) 10%,transparent);stroke:var(--t1);stroke-width:2"/>
+      <ellipse cx="215" cy="140" rx="178" ry="94" style="fill:color-mix(in srgb,var(--t2) 12%,transparent);stroke:var(--t2);stroke-width:2"/>
+      <ellipse cx="245" cy="162" rx="88" ry="54" style="fill:color-mix(in srgb,var(--t4) 16%,transparent);stroke:var(--t4);stroke-width:2"/>
+      <text x="260" y="30" text-anchor="middle" style="fill:var(--t1)">Rasyonel sayılar</text>
+      <text x="215" y="70" text-anchor="middle" style="fill:var(--t2)">Tam sayılar</text>
+      <text x="245" y="146" text-anchor="middle" style="fill:var(--t4)" font-size="15">Doğal sayılar</text>
+      <text x="245" y="178" text-anchor="middle" font-size="17">0  1  2  3  …</text>
+      <text x="95" y="130" text-anchor="middle" font-size="17">−1</text>
+      <text x="95" y="160" text-anchor="middle" font-size="17">−5</text>
+      <text x="100" y="190" text-anchor="middle" font-size="17">−12</text>
+      <text x="455" y="95" text-anchor="middle" font-size="17">3/4</text>
+      <text x="455" y="128" text-anchor="middle" font-size="17">−2/5</text>
+      <text x="455" y="161" text-anchor="middle" font-size="17">0,2</text>
+      <text x="440" y="194" text-anchor="middle" font-size="17">−1,8</text>
+    </svg>
+    <p class="note">كل عدد طبيعي هو صحيح أيضاً، وكل عدد صحيح هو نسبي أيضاً: <span class="m">−5 = <span class="fr"><span>−5</span><span>1</span></span></span>.</p>
+
+    <div class="trap">
+      <b>⚠️ انتبه لهذه الفخاخ</b>
+      <ul>
+        <li><b>المقام صفر:</b> <span class="m"><span class="fr"><span>3</span><span>0</span></span></span> <span class="t" lang="tr">tanımsız</span> أي غير معرّف. <b>ليس عدداً نسبياً.</b></li>
+        <li><b>البسط صفر لا مشكلة:</b> <span class="m"><span class="fr"><span>0</span><span>9</span></span> = 0</span>، وهو طبيعي وصحيح ونسبي.</li>
+        <li><b>بسّط الكسر أولاً:</b> <span class="m"><span class="fr"><span>12</span><span>4</span></span> = 3</span> إذن هو عدد طبيعي. و <span class="m"><span class="fr"><span>−7</span><span>7</span></span> = −1</span> إذن هو صحيح.</li>
+        <li><b>العدد العشري نسبي:</b> <span class="m">−1,8 = <span class="fr"><span>−18</span><span>10</span></span></span>.</li>
+      </ul>
+    </div>
+
+    <div class="tool" id="fam-tool">
+      <b>🎯 جرّب بنفسك (سؤال 6 من كتيّب الوزارة): اضغط المربعات الصحيحة ثم «تحقّق»</b>
+      <div class="fam" id="fam">
+        <div class="fam-head"><span></span><span>Doğal</span><span>Tam</span><span>Rasyonel</span></div>
+        <div class="fam-row" data-ans="R"><span class="v"><span class="fr"><span>21</span><span>4</span></span></span><button type="button" data-k="D" aria-pressed="false" aria-label="Doğal">✓</button><button type="button" data-k="T" aria-pressed="false" aria-label="Tam">✓</button><button type="button" data-k="R" aria-pressed="false" aria-label="Rasyonel">✓</button><span class="why">كسر لا يُختصر إلى عدد صحيح، فهو نسبي فقط.</span></div>
+        <div class="fam-row" data-ans="TR"><span class="v">−5</span><button type="button" data-k="D" aria-pressed="false" aria-label="Doğal">✓</button><button type="button" data-k="T" aria-pressed="false" aria-label="Tam">✓</button><button type="button" data-k="R" aria-pressed="false" aria-label="Rasyonel">✓</button><span class="why">سالب، فليس طبيعياً. لكنه صحيح ونسبي: <span class="m"><span class="fr"><span>−5</span><span>1</span></span></span>.</span></div>
+        <div class="fam-row" data-ans="R"><span class="v">−1,8</span><button type="button" data-k="D" aria-pressed="false" aria-label="Doğal">✓</button><button type="button" data-k="T" aria-pressed="false" aria-label="Tam">✓</button><button type="button" data-k="R" aria-pressed="false" aria-label="Rasyonel">✓</button><span class="why"><span class="m">−1,8 = <span class="fr"><span>−18</span><span>10</span></span></span>، فهو نسبي فقط.</span></div>
+        <div class="fam-row" data-ans="DTR"><span class="v"><span class="fr"><span>12</span><span>4</span></span></span><button type="button" data-k="D" aria-pressed="false" aria-label="Doğal">✓</button><button type="button" data-k="T" aria-pressed="false" aria-label="Tam">✓</button><button type="button" data-k="R" aria-pressed="false" aria-label="Rasyonel">✓</button><span class="why"><span class="m"><span class="fr"><span>12</span><span>4</span></span> = 3</span>، فهو في العائلات الثلاث.</span></div>
+        <div class="fam-row" data-ans="DTR"><span class="v"><span class="fr"><span>0</span><span>9</span></span></span><button type="button" data-k="D" aria-pressed="false" aria-label="Doğal">✓</button><button type="button" data-k="T" aria-pressed="false" aria-label="Tam">✓</button><button type="button" data-k="R" aria-pressed="false" aria-label="Rasyonel">✓</button><span class="why"><span class="m"><span class="fr"><span>0</span><span>9</span></span> = 0</span>، والصفر عدد طبيعي.</span></div>
+        <div class="fam-row" data-ans="TR"><span class="v"><span class="fr"><span>−7</span><span>7</span></span></span><button type="button" data-k="D" aria-pressed="false" aria-label="Doğal">✓</button><button type="button" data-k="T" aria-pressed="false" aria-label="Tam">✓</button><button type="button" data-k="R" aria-pressed="false" aria-label="Rasyonel">✓</button><span class="why"><span class="m"><span class="fr"><span>−7</span><span>7</span></span> = −1</span>، صحيح ونسبي.</span></div>
+        <div class="fam-row" data-ans=""><span class="v"><span class="fr"><span>3</span><span>0</span></span></span><button type="button" data-k="D" aria-pressed="false" aria-label="Doğal">✓</button><button type="button" data-k="T" aria-pressed="false" aria-label="Tam">✓</button><button type="button" data-k="R" aria-pressed="false" aria-label="Rasyonel">✓</button><span class="why">المقام صفر: <span class="t" lang="tr">tanımsız</span>. لا نضع أي علامة.</span></div>
+      </div>
+      <div class="row-btns"><button class="btn pri" type="button" id="fam-check">تحقّق</button><button class="btn" type="button" id="fam-show">اعرض الإجابة</button><button class="btn" type="button" id="fam-reset">من جديد</button></div>
+      <p class="out" id="fam-out" aria-live="polite"></p>
+    </div>
+
+    <div class="ob">
+      <p class="ob-h"><span class="badge alt">100 Soru · 7</span>سؤال يتكرر كثيراً</p>
+      <div class="tq"><p><span class="fr"><span>x + 2</span><span>5 − x</span></span> ifadesi x yerine hangi sayı yazılırsa <b>rasyonel sayı olmaz</b>?</p></div>
+      <details class="sol"><summary>اعرض الحل</summary><div>
+        <ol class="steps"><li>الكسر لا يكون نسبياً عندما يصبح <b>المقام صفراً</b>.</li><li>المقام <span class="m">5 − x = 0</span>، إذن <span class="m">x = 5</span>.</li></ol>
+        <p class="ans">Cevap: x = 5 (payda 0 olur, ifade tanımsızdır).</p>
+      </div></details>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3><span class="k">1.2</span>الموجب والسالب في الحياة</h3>
+    <p>في المسائل نترجم الكلمات إلى إشارة <span class="m">+</span> أو <span class="m">−</span>:</p>
+    <div class="pm">
+      <div>➕ موجب <span class="m">+</span></div><div>➖ سالب <span class="m">−</span></div>
+      <div><span class="t" lang="tr">deniz seviyesinin üstü</span> فوق سطح البحر</div><div><span class="t" lang="tr">deniz seviyesinin altı</span> تحت سطح البحر</div>
+      <div><span class="t" lang="tr">sıfırın üstü</span> فوق الصفر</div><div><span class="t" lang="tr">sıfırın altı</span> تحت الصفر</div>
+      <div><span class="t" lang="tr">para yatırmak</span> إيداع مال</div><div><span class="t" lang="tr">borç</span> دَين، <span class="t" lang="tr">para çekmek</span> سحب</div>
+      <div><span class="t" lang="tr">kâr</span> ربح، <span class="t" lang="tr">kazanmak</span> يكسب</div><div><span class="t" lang="tr">zarar</span> خسارة، <span class="t" lang="tr">kaybetmek</span> يخسر</div>
+      <div><span class="t" lang="tr">ileri, sağ, yukarı</span> أمام، يمين، أعلى</div><div><span class="t" lang="tr">geri, sol, aşağı</span> خلف، يسار، أسفل</div>
+      <div><span class="t" lang="tr">fazla</span> زائد</div><div><span class="t" lang="tr">eksik</span> ناقص</div>
+      <div><span class="t" lang="tr">MS</span> بعد الميلاد</div><div><span class="t" lang="tr">MÖ</span> قبل الميلاد</div>
+    </div>
+    <div class="ob">
+      <p class="ob-h"><span class="badge">MEB · 2</span>من كتيّب الوزارة: عبّر بعدد صحيح</p>
+      <div class="tq">
+        <p>Ağrı Dağı’nın zirvesi deniz seviyesinin yaklaşık 5137 metre <b>üzerindedir</b>. → <b>+5137</b></p>
+        <p>Challenger Derinliği deniz seviyesinin yaklaşık 10 935 metre <b>altındadır</b>. → <b>−10 935</b></p>
+        <p>Erzurum’da hava sıcaklığı <b>sıfırın altında</b> 25 °C. → <b>−25</b></p>
+        <p>Çamlıca Kulesi zeminden itibaren 369 metredir. → <b>+369</b></p>
+      </div>
+    </div>
+    <div class="ob">
+      <p class="ob-h"><span class="badge">MEB · 1</span>من كتيّب الوزارة: هل الحرارة داخل المجال؟</p>
+      <div class="tq">
+        <table><tr><th>Hayvan</th><th>En düşük</th><th>En yüksek</th></tr>
+          <tr><td>Kutup tavşanı</td><td>−40 °C</td><td>+10 °C</td></tr>
+          <tr><td>Kutup tilkisi</td><td>−50 °C</td><td>+5 °C</td></tr>
+          <tr><td>Ren geyiği</td><td>−35 °C</td><td>+15 °C</td></tr></table>
+        <p class="ask">−45, −30, −10, 0, 7 ve 12 °C sıcaklıkların hangi hayvanların yaşadığı bölgelerde görüldüğünü “✓” ile belirleyiniz.</p>
+      </div>
+      <details class="sol"><summary>اعرض الحل</summary><div>
+        <ol class="steps"><li>الحرارة تناسب الحيوان إذا كانت <b>بين</b> أدنى درجة وأعلى درجة له.</li><li><span class="m">−45</span> أصغر من <span class="m">−40</span> و <span class="m">−35</span>، لكنها أكبر من <span class="m">−50</span>: تناسب الثعلب فقط.</li><li><span class="m">7</span> أكبر من <span class="m">+5</span>، فلا تناسب الثعلب.</li><li><span class="m">12</span> أكبر من <span class="m">+10</span> و <span class="m">+5</span>: تناسب الرنة فقط.</li></ol>
+        <div class="tbl"><table><tr><th>°C</th><th>Tavşan</th><th>Tilki</th><th>Geyik</th></tr>
+          <tr><td>−45</td><td></td><td>✓</td><td></td></tr><tr><td>−30</td><td>✓</td><td>✓</td><td>✓</td></tr>
+          <tr><td>−10</td><td>✓</td><td>✓</td><td>✓</td></tr><tr><td>0</td><td>✓</td><td>✓</td><td>✓</td></tr>
+          <tr><td>7</td><td>✓</td><td></td><td>✓</td></tr><tr><td>12</td><td></td><td></td><td>✓</td></tr></table></div>
+      </div></details>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3><span class="k">1.3</span>القيمة المطلقة <span class="t">Mutlak değer</span></h3>
+    <div class="rule"><b>القاعدة</b>القيمة المطلقة = <b>بُعد العدد عن الصفر</b>. لذلك هي دائماً موجبة أو صفر.</div>
+    <div class="eq">|−7| = 7     |+7| = 7     |0| = 0</div>
+    <svg class="fig" viewBox="0 0 600 90" role="img" aria-label="العددان −11 و 11 كلاهما يبعد 11 وحدة عن الصفر">
+      <line class="axis" x1="20" y1="60" x2="580" y2="60"/>
+      <line class="tick" x1="60" y1="52" x2="60" y2="68"/><line class="tick" x1="300" y1="52" x2="300" y2="68"/><line class="tick" x1="540" y1="52" x2="540" y2="68"/>
+      <text x="60" y="88" text-anchor="middle">−11</text><text x="300" y="88" text-anchor="middle">0</text><text x="540" y="88" text-anchor="middle">+11</text>
+      <path d="M60 46 Q180 6 300 46" fill="none" class="accs" stroke-width="2.5"/><path d="M300 46 Q420 6 540 46" fill="none" class="accs" stroke-width="2.5"/>
+      <text x="180" y="22" text-anchor="middle" class="acc">11 birim</text><text x="420" y="22" text-anchor="middle" class="acc">11 birim</text>
+    </svg>
+    <ul class="dots">
+      <li>إذا <span class="m">|x| = 11</span> فهناك <b>عددان</b>: <span class="m">+11</span> و <span class="m">−11</span>. المسافة بينهما <span class="m">11 + 11 = 22</span> وحدة.</li>
+      <li><span class="t" lang="tr">Hata miktarı</span> (مقدار الخطأ) = القيمة المطلقة للفرق: <span class="m">|496 − 500| = |−4| = 4</span>.</li>
+    </ul>
+    <div class="ob">
+      <p class="ob-h"><span class="badge">MEB · 9</span>من كتيّب الوزارة</p>
+      <div class="tq"><p>Elif, aklından tuttuğu bir tam sayının mutlak değerinin 11 olduğunu belirtmiştir.</p><p class="ask">a) Elif’in aklından tutmuş olabileceği tam sayıları yazınız. b) Bu sayılara karşılık gelen noktalar arasındaki uzaklık kaç birimdir?</p></div>
+      <details class="sol"><summary>اعرض الحل</summary><div>
+        <ol class="steps"><li>عددان بُعدهما عن الصفر 11: <span class="m">−11</span> و <span class="m">+11</span>.</li><li>كل واحد يبعد 11 عن الصفر، وهما في جهتين مختلفتين: <span class="m">11 + 11 = 22</span>.</li></ol>
+        <p class="ans">a) −11 ve +11   b) 11 + 11 = 22 birim</p>
+      </div></details>
+    </div>
+    <div class="ob">
+      <p class="ob-h"><span class="badge">MEB · 4</span>من كتيّب الوزارة: مقدار الخطأ</p>
+      <div class="tq">
+        <p>Çay paketleri hedef kütle ile karşılaştırılıyor.</p>
+        <table><tr><th>Makine</th><th>Kütle</th><th>Karşılaştırma</th><th>Hata miktarı</th></tr>
+          <tr><td>1.</td><td>496 g</td><td>4 g eksik</td><td>|–4| = 4</td></tr>
+          <tr><td>2.</td><td>502 g</td><td></td><td></td></tr><tr><td>3.</td><td>499 g</td><td></td><td></td></tr>
+          <tr><td>4.</td><td>493 g</td><td></td><td></td></tr><tr><td>5.</td><td>501 g</td><td></td><td></td></tr></table>
+        <p class="ask">a) Hedef kütle kaç gramdır? b) Tabloyu doldurunuz. c) Hata miktarı en az olan makine(ler) hangisidir? Gerekçesiyle açıklayınız.</p>
+      </div>
+      <details class="sol"><summary>اعرض الحل</summary><div>
+        <ol class="steps">
+          <li>a) الكيس 496 g وينقصه 4 g، إذن الهدف <span class="m">496 + 4 = 500</span> g.</li>
+          <li>b) نطرح 500 من كل كتلة: السالب = ناقص <span class="t" lang="tr">eksik</span>، الموجب = زائد <span class="t" lang="tr">fazla</span>. مقدار الخطأ = القيمة المطلقة.</li>
+          <li>c) أصغر خطأ هو 1 g في الآلة 3 والآلة 5. واحد ناقص وواحد زائد، لكن البُعد عن 500 هو نفسه.</li>
+        </ol>
+        <div class="tbl"><table dir="ltr"><tr><th>Makine</th><th>Karşılaştırma</th><th>Hata</th></tr>
+          <tr><td>2.</td><td>2 g fazla</td><td>|+2| = 2</td></tr><tr><td>3.</td><td>1 g eksik</td><td>|−1| = 1</td></tr>
+          <tr><td>4.</td><td>7 g eksik</td><td>|−7| = 7</td></tr><tr><td>5.</td><td>1 g fazla</td><td>|+1| = 1</td></tr></table></div>
+        <p class="ans">a) 500 g   c) 3. ve 5. makineler; ikisinin de 500 g’a uzaklığı 1 g’dır.</p>
+      </div></details>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3><span class="k">1.4</span>العدد النسبي على خط الأعداد <span class="t">Sayı doğrusu</span></h3>
+    <div class="rule"><b>بين أي عددين صحيحين يقع الكسر؟</b>
+      <ol>
+        <li>حوّل الكسر إلى عدد كسري <span class="t" lang="tr">tam sayılı kesir</span>: اقسم البسط على المقام. <span class="m">11 ÷ 6 = 1</span> والباقي <span class="m">5</span>، إذن <span class="m"><span class="fr"><span>11</span><span>6</span></span> = <span class="mx">1<span class="fr"><span>5</span><span>6</span></span></span></span>.</li>
+        <li>الموجب <span class="m"><span class="mx">1<span class="fr"><span>5</span><span>6</span></span></span></span> يقع بين <span class="m">1</span> و <span class="m">2</span>.</li>
+        <li>السالب <span class="m">−<span class="mx">1<span class="fr"><span>5</span><span>6</span></span></span></span> يقع بين <span class="m">−2</span> و <span class="m">−1</span> (نفس الأرقام، بإشارة سالبة).</li>
+      </ol>
+    </div>
+    <div class="tool">
+      <b>🎯 اختر كسراً لترى مكانه على خط الأعداد</b>
+      <div class="picks">
+        <button class="btn" type="button" data-nl="-11/6">−<span class="fr"><span>11</span><span>6</span></span></button>
+        <button class="btn" type="button" data-nl="7/3"><span class="fr"><span>7</span><span>3</span></span></button>
+        <button class="btn" type="button" data-nl="-3/5">−<span class="fr"><span>3</span><span>5</span></span></button>
+        <button class="btn" type="button" data-nl="-17/4">−<span class="fr"><span>17</span><span>4</span></span></button>
+        <button class="btn" type="button" data-nl="9/4"><span class="fr"><span>9</span><span>4</span></span></button>
+        <button class="btn" type="button" data-nl="-7/4">−<span class="fr"><span>7</span><span>4</span></span></button>
+        <button class="btn" type="button" data-nl="21/5"><span class="fr"><span>21</span><span>5</span></span></button>
+        <button class="btn" type="button" data-nl="-10/3">−<span class="fr"><span>10</span><span>3</span></span></button>
+      </div>
+      <svg class="fig" id="nl" viewBox="0 0 640 100" role="img" aria-label="خط الأعداد من −5 إلى 5">
+        <rect id="nl-seg" x="0" y="55" width="0" height="10" rx="5" class="acc" opacity=".35"/>
+        <line class="axis" x1="20" y1="60" x2="620" y2="60"/>
+        <g id="nl-ticks"></g>
+        <g id="nl-mark" style="display:none"><line x1="0" y1="34" x2="0" y2="60" class="accs" stroke-width="2"/><circle cx="0" cy="60" r="8" class="acc"/><text id="nl-lab" x="0" y="26" text-anchor="middle" class="acc"></text></g>
+      </svg>
+      <p class="out" id="nl-out" aria-live="polite">اضغط على أحد الكسور.</p>
+    </div>
+    <p><b>العدد على خط مقسّم إلى أجزاء:</b> عُدّ الأجزاء بين العددين الصحيحين، فيصير كل جزء كسراً. مثلاً بين <span class="m">−2</span> و <span class="m">−1</span> أربعة أجزاء، فكل جزء <span class="m"><span class="fr"><span>1</span><span>4</span></span></span>.</p>
+    <div class="ob">
+      <p class="ob-h"><span class="badge">MEB · 8</span>من كتيّب الوزارة</p>
+      <div class="tq">
+        <p>Aşağıdaki sayı doğrusunda –2 ile –1 arası dört eş parçaya bölünmüştür.</p>
+        <svg class="fig" viewBox="0 0 520 70" style="max-width:420px">
+          <line class="axis" x1="20" y1="35" x2="500" y2="35"/>
+          <line class="tick" x1="60" y1="25" x2="60" y2="45"/><line class="tick" x1="160" y1="28" x2="160" y2="42"/><line class="tick" x1="260" y1="28" x2="260" y2="42"/><line class="tick" x1="360" y1="28" x2="360" y2="42"/><line class="tick" x1="460" y1="25" x2="460" y2="45"/>
+          <text x="60" y="65" text-anchor="middle">–2</text><text x="460" y="65" text-anchor="middle">–1</text>
+          <circle cx="160" cy="35" r="6" class="acc"/><text x="160" y="18" text-anchor="middle" class="acc">A</text>
+        </svg>
+        <p>A noktası için öğrencilerin cevapları: Kerem: <span class="m">−<span class="mx">1<span class="fr"><span>3</span><span>4</span></span></span></span>, Zeynep: <span class="m">−<span class="fr"><span>14</span><span>8</span></span></span>, Arda: <span class="m">−<span class="fr"><span>21</span><span>12</span></span></span></p>
+        <p class="ask">Bu öğrencilerden hangisi ya da hangileri doğru cevap vermiştir? Gerekçesiyle açıklayınız.</p>
+      </div>
+      <details class="sol"><summary>اعرض الحل</summary><div>
+        <ol class="steps">
+          <li>كل جزء = <span class="m"><span class="fr"><span>1</span><span>4</span></span></span>. النقطة A تبعد عن <span class="m">−1</span> ثلاثة أجزاء نحو اليسار: <span class="m">−<span class="mx">1<span class="fr"><span>3</span><span>4</span></span></span> = −<span class="fr"><span>7</span><span>4</span></span></span>.</li>
+          <li>Zeynep: <span class="m">−<span class="fr"><span>14</span><span>8</span></span></span> نقسم على 2 ← <span class="m">−<span class="fr"><span>7</span><span>4</span></span></span> ✓.</li>
+          <li>Arda: <span class="m">−<span class="fr"><span>21</span><span>12</span></span></span> نقسم على 3 ← <span class="m">−<span class="fr"><span>7</span><span>4</span></span></span> ✓.</li>
+          <li>كسور مختلفة الشكل لكنها <b>نفس العدد</b> (كسور متكافئة).</li>
+        </ol>
+        <p class="ans">Üçü de doğrudur. Sadeleştirince hepsi <span class="m">−<span class="fr"><span>7</span><span>4</span></span></span> olur; aynı rasyonel sayıyı gösterirler.</p>
+      </div></details>
+    </div>
+    <div class="rule"><b>مكان الإشارة السالبة لا يغيّر العدد</b>
+      <div class="eq" style="background:none;margin:0">−<span class="fr"><span>3</span><span>5</span></span> = <span class="fr"><span>−3</span><span>5</span></span> = <span class="fr"><span>3</span><span>−5</span></span></div>
+    </div>
+  </div>
+
+  <h3 class="sec">✍️ تمارين (من ملف الـ100 سؤال)</h3>
+  <div class="prac">
+    <div class="pq"><span class="num">Soru 1</span><div class="tq"><span class="m"><span class="fr"><span>−11</span><span>6</span></span></span> rasyonel sayısı sayı doğrusunda hangi ardışık iki tam sayı arasında yer alır?</div>
+      <details class="sol"><summary>الجواب</summary><div><p class="ans">−2 ile −1 arasında</p><p><span class="m"><span class="fr"><span>11</span><span>6</span></span> = <span class="mx">1<span class="fr"><span>5</span><span>6</span></span></span></span>، والسالب <span class="m">−<span class="mx">1<span class="fr"><span>5</span><span>6</span></span></span></span> بين <span class="m">−2</span> و <span class="m">−1</span>.</p></div></details></div>
+    <div class="pq"><span class="num">Soru 3</span><div class="tq"><span class="m">−<span class="fr"><span>3</span><span>5</span></span> = <span class="fr"><span>−3</span><span>A</span></span> = <span class="fr"><span>C</span><span>−5</span></span></span> olduğuna göre A + C kaçtır?</div>
+      <details class="sol"><summary>الجواب</summary><div><p class="ans">A = 5, C = 3 → A + C = 8</p><p>البسط <span class="m">−3</span> موجود، فالمقام <span class="m">A = 5</span>. والمقام <span class="m">−5</span> سالب، فالبسط موجب <span class="m">C = 3</span>.</p></div></details></div>
+    <div class="pq"><span class="num">Soru 4</span><div class="tq">I. <span class="m"><span class="fr"><span>2</span><span>5</span></span></span>   II. −3   III. <span class="m"><span class="fr"><span>8</span><span>2</span></span></span>   IV. 0,2 — Hangileri rasyonel sayıdır ancak tam sayı <b>değildir</b>?</div>
+      <details class="sol"><summary>الجواب</summary><div><p class="ans">I ve IV</p><p><span class="m">−3</span> صحيح، و <span class="m"><span class="fr"><span>8</span><span>2</span></span> = 4</span> صحيح. أما <span class="m"><span class="fr"><span>2</span><span>5</span></span></span> و <span class="m">0,2</span> فنسبيان فقط.</p></div></details></div>
+    <div class="pq"><span class="num">Soru 14</span><div class="tq">|★| = 8 ise ★ sembolünün alabileceği kaç farklı değer vardır?</div>
+      <details class="sol"><summary>الجواب</summary><div><p class="ans">2 (8 ve −8)</p><p>عددان يبعدان 8 عن الصفر.</p></div></details></div>
+    <div class="pq"><span class="num">Soru 16</span><div class="tq"><span class="m">−<span class="fr"><span>13</span><span>7</span></span></span>, <span class="m"><span class="fr"><span>5</span><span>1</span></span></span>, <span class="m"><span class="fr"><span>0</span><span>3</span></span></span>, <span class="m"><span class="fr"><span>−8</span><span>−2</span></span></span>, <span class="m"><span class="fr"><span>−3</span><span>−6</span></span></span>, <span class="m"><span class="fr"><span>7</span><span>0</span></span></span>, <span class="m"><span class="mx">2<span class="fr"><span>1</span><span>4</span></span></span></span>, −9 — Kaç tanesi rasyonel olduğu hâlde tam sayı <b>değildir</b>?</div>
+      <details class="sol"><summary>الجواب</summary><div><p class="ans">3 tane</p><p><span class="m">−<span class="fr"><span>13</span><span>7</span></span></span>، <span class="m"><span class="fr"><span>−3</span><span>−6</span></span> = <span class="fr"><span>1</span><span>2</span></span></span>، <span class="m"><span class="mx">2<span class="fr"><span>1</span><span>4</span></span></span></span>. أما <span class="m"><span class="fr"><span>7</span><span>0</span></span></span> فغير معرّف، والباقي أعداد صحيحة (<span class="m"><span class="fr"><span>−8</span><span>−2</span></span> = 4</span>).</p></div></details></div>
+    <div class="pq"><span class="num">Soru 17</span><div class="tq">Oyuncak araba 0 noktasından başlıyor: 3 birim sola, 3 birim sağa, 2 birim sağa, 3 birim sola, 4 birim sola gidiyor. Araba hangi tam sayıda durur?</div>
+      <details class="sol"><summary>الجواب</summary><div><p class="ans">0 − 3 + 3 + 2 − 3 − 4 = −5</p><p>اليسار سالب واليمين موجب.</p></div></details></div>
+    <div class="pq"><span class="num">Soru 22</span><div class="tq"><span class="m">−<span class="mx">4<span class="fr"><span>3</span><span>7</span></span></span></span> ile <span class="m"><span class="fr"><span>9</span><span>4</span></span></span> rasyonel sayıları arasında kaç farklı tam sayı vardır?</div>
+      <details class="sol"><summary>الجواب</summary><div><p class="ans">7 (−4, −3, −2, −1, 0, 1, 2)</p><p><span class="m"><span class="fr"><span>9</span><span>4</span></span> = <span class="mx">2<span class="fr"><span>1</span><span>4</span></span></span></span>. الأعداد الصحيحة من <span class="m">−4</span> إلى <span class="m">2</span>.</p></div></details></div>
+    <div class="pq"><span class="num">Soru 24</span><div class="tq">Balonlarda −15, 8, −3, 12, 0, 45, −1 yazıyor. En az kaç balon patlatılırsa kalan balonlardaki sayıların tamamı pozitif olur?</div>
+      <details class="sol"><summary>الجواب</summary><div><p class="ans">4 (−15, −3, 0, −1)</p><p>انتبه: الصفر ليس موجباً، فنفجّر بالونه أيضاً.</p></div></details></div>
+  </div>
+  <div class="done-btn"><button type="button" data-done="d1" aria-pressed="false">فهمت الدرس 1</button></div>
+</section>
+
+<!-- ======================= LESSON 2 ======================= -->
+<section class="lesson" id="d2" style="--tc:var(--t2)">
+  <div class="lh">
+    <span class="n">2</span>
+    <div>
+      <h2>الكتابة العشرية</h2>
+      <div class="sub"><span class="t">Rasyonel sayıların ondalık gösterimi</span><span class="m">MAT.7.1.2</span><span class="chip">1–2 سؤال</span></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3><span class="k">2.1</span>من كسر إلى عدد عشري</h3>
+    <div class="trap"><b>⚠️ في تركيا الفاصلة العشرية فاصلة وليست نقطة</b>نكتب <span class="m">0,75</span> وليس <span class="m">0.75</span>.</div>
+    <div class="grid2">
+      <div class="mini"><b>الطريقة 1: القسمة</b><br>البسط ÷ المقام<div class="eq"><span class="fr"><span>3</span><span>4</span></span> = 3 ÷ 4 = 0,75</div></div>
+      <div class="mini"><b>الطريقة 2: كبّر المقام إلى 10 أو 100 أو 1000</b><div class="eq"><span class="fr"><span>7</span><span>50</span></span> = <span class="fr"><span>7 · 2</span><span>50 · 2</span></span> = <span class="fr"><span>14</span><span>100</span></span> = 0,14</div></div>
+    </div>
+    <p style="margin-top:10px">الكسر السالب يبقى سالباً: <span class="m">−<span class="fr"><span>15</span><span>8</span></span> = −1,875</span>.</p>
+  </div>
+
+  <div class="card">
+    <h3><span class="k">2.2</span>منتهٍ أم دوري؟ <span class="t">Sonlu mu, devirli mi?</span></h3>
+    <ul class="dots">
+      <li><b><span class="t" lang="tr">Sonlu</span> منتهٍ:</b> الأرقام بعد الفاصلة تنتهي: <span class="m">0,75</span>.</li>
+      <li><b><span class="t" lang="tr">Devirli</span> دوري:</b> رقم أو مجموعة أرقام تتكرر بلا نهاية. نرسم <b>خطاً فوق</b> الجزء المتكرر: <span class="m">0,333… = 0,<span class="ov">3</span></span> و <span class="m">0,8333… = 0,8<span class="ov">3</span></span> و <span class="m">0,3636… = 0,<span class="ov">36</span></span>.</li>
+    </ul>
+    <div class="rule"><b>⭐ القاعدة الذهبية (3 خطوات)</b>
+      <ol>
+        <li><b>بسّط</b> الكسر أولاً <span class="t" lang="tr">en sade hâl</span>.</li>
+        <li><b>حلّل المقام</b> إلى عوامل أولية <span class="t" lang="tr">asal çarpanlar</span>.</li>
+        <li>فيه <b>2 و 5 فقط</b> ← <b>منتهٍ</b>. فيه <b>3 أو 7 أو 11 …</b> ← <b>دوري</b>.</li>
+      </ol>
+    </div>
+    <div class="tbl"><table>
+      <tr><th>الكسر</th><th>المقام</th><th>النتيجة</th></tr>
+      <tr><td><span class="m"><span class="fr"><span>7</span><span>20</span></span></span></td><td><span class="m">20 = 2 · 2 · 5</span></td><td>منتهٍ <span class="m">0,35</span></td></tr>
+      <tr><td><span class="m"><span class="fr"><span>−11</span><span>18</span></span></span></td><td><span class="m">18 = 2 · 3 · 3</span> فيه 3</td><td>دوري</td></tr>
+      <tr><td><span class="m"><span class="fr"><span>15</span><span>24</span></span> = <span class="fr"><span>5</span><span>8</span></span></span></td><td><span class="m">8 = 2 · 2 · 2</span></td><td>منتهٍ <span class="m">0,625</span></td></tr>
+      <tr><td><span class="m"><span class="fr"><span>9</span><span>35</span></span></span></td><td><span class="m">35 = 5 · 7</span> فيه 7</td><td>دوري</td></tr>
+    </table></div>
+    <p class="note">هذا الجدول هو حل السؤال 5 من كتيّب الوزارة. لاحظ <span class="m"><span class="fr"><span>15</span><span>24</span></span></span>: لو لم نبسّطه لظننا أنه دوري بسبب الـ3.</p>
+
+    <div class="tool">
+      <b>🎯 منتهٍ أم دوري؟ اختر لكل كسر</b>
+      <div class="sd">
+        <div class="sd-card" data-k="s"><div class="v"><span class="fr"><span>3</span><span>40</span></span></div><div class="bt"><button class="btn" type="button" data-pick="s">Sonlu</button><button class="btn" type="button" data-pick="d">Devirli</button></div><div class="why2"><span class="m">40 = 2·2·2·5</span> ← منتهٍ <span class="m">0,075</span></div></div>
+        <div class="sd-card" data-k="d"><div class="v"><span class="fr"><span>5</span><span>6</span></span></div><div class="bt"><button class="btn" type="button" data-pick="s">Sonlu</button><button class="btn" type="button" data-pick="d">Devirli</button></div><div class="why2"><span class="m">6 = 2·3</span> فيه 3 ← <span class="m">0,8<span class="ov">3</span></span></div></div>
+        <div class="sd-card" data-k="s"><div class="v"><span class="fr"><span>21</span><span>30</span></span></div><div class="bt"><button class="btn" type="button" data-pick="s">Sonlu</button><button class="btn" type="button" data-pick="d">Devirli</button></div><div class="why2">بسّط: <span class="m"><span class="fr"><span>21</span><span>30</span></span> = <span class="fr"><span>7</span><span>10</span></span> = 0,7</span> ← منتهٍ</div></div>
+        <div class="sd-card" data-k="d"><div class="v"><span class="fr"><span>4</span><span>11</span></span></div><div class="bt"><button class="btn" type="button" data-pick="s">Sonlu</button><button class="btn" type="button" data-pick="d">Devirli</button></div><div class="why2">المقام 11 ← <span class="m">0,<span class="ov">36</span></span></div></div>
+        <div class="sd-card" data-k="s"><div class="v"><span class="fr"><span>6</span><span>15</span></span></div><div class="bt"><button class="btn" type="button" data-pick="s">Sonlu</button><button class="btn" type="button" data-pick="d">Devirli</button></div><div class="why2">بسّط: <span class="m"><span class="fr"><span>6</span><span>15</span></span> = <span class="fr"><span>2</span><span>5</span></span> = 0,4</span> ← منتهٍ</div></div>
+        <div class="sd-card" data-k="d"><div class="v"><span class="fr"><span>7</span><span>12</span></span></div><div class="bt"><button class="btn" type="button" data-pick="s">Sonlu</button><button class="btn" type="button" data-pick="d">Devirli</button></div><div class="why2"><span class="m">12 = 2·2·3</span> فيه 3 ← دوري</div></div>
+        <div class="sd-card" data-k="s"><div class="v"><span class="fr"><span>−9</span><span>25</span></span></div><div class="bt"><button class="btn" type="button" data-pick="s">Sonlu</button><button class="btn" type="button" data-pick="d">Devirli</button></div><div class="why2"><span class="m">25 = 5·5</span> ← منتهٍ <span class="m">−0,36</span></div></div>
+        <div class="sd-card" data-k="d"><div class="v"><span class="fr"><span>2</span><span>9</span></span></div><div class="bt"><button class="btn" type="button" data-pick="s">Sonlu</button><button class="btn" type="button" data-pick="d">Devirli</button></div><div class="why2"><span class="m">9 = 3·3</span> ← <span class="m">0,<span class="ov">2</span></span></div></div>
+      </div>
+      <p class="out" id="sd-out" aria-live="polite"></p>
+    </div>
+
+    <div class="ob">
+      <p class="ob-h"><span class="badge">MEB · 7</span>من كتيّب الوزارة</p>
+      <div class="tq"><p><span class="m"><span class="fr"><span>?</span><span>35</span></span></span> rasyonel sayısının sonlu ondalık gösterime sahip olması için ? yerine yazılabilecek tam sayıların ortak özelliğini gerekçesiyle açıklayınız.</p></div>
+      <details class="sol"><summary>اعرض الحل</summary><div>
+        <ol class="steps"><li><span class="m">35 = 5 · 7</span>. الـ5 لا مشكلة فيها، لكن الـ7 تجعل الكسر دورياً.</li><li>لكي تختفي الـ7 بالتبسيط، يجب أن يكون البسط من مضاعفات 7: <span class="m"><span class="fr"><span>14</span><span>35</span></span> = <span class="fr"><span>2</span><span>5</span></span></span>.</li></ol>
+        <p class="ans">? yerine 7’nin katı olan bir tam sayı yazılmalıdır. Böylece sadeleştirince paydada 7 kalmaz, yalnızca 5 kalır.</p>
+      </div></details>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3><span class="k">2.3</span>من عدد عشري إلى كسر</h3>
+    <p><b>العدد المنتهي:</b> الأرقام بعد الفاصلة تخبرنا بالمقام (رقمان ← 100).</p>
+    <div class="eq">0,64 = <span class="fr"><span>64</span><span>100</span></span> = <span class="fr"><span>16</span><span>25</span></span>      1,05 = <span class="fr"><span>105</span><span>100</span></span> = <span class="fr"><span>21</span><span>20</span></span></div>
+    <div class="rule"><b>العدد الدوري: القاعدة</b>
+      <ol>
+        <li><b>البسط</b> = العدد كله بدون فاصلة − الجزء الذي لا يتكرر.</li>
+        <li><b>المقام</b> = رقم <b>9</b> لكل رقم متكرر، ثم رقم <b>0</b> لكل رقم غير متكرر بعد الفاصلة.</li>
+      </ol>
+    </div>
+    <div class="eq">0,<span class="ov">4</span> = <span class="fr"><span>4</span><span>9</span></span>      0,<span class="ov">9</span> = <span class="fr"><span>9</span><span>9</span></span> = 1</div>
+    <div class="eq">1,2<span class="ov">3</span> = <span class="fr"><span>123 − 12</span><span>90</span></span> = <span class="fr"><span>111</span><span>90</span></span> = <span class="fr"><span>37</span><span>30</span></span></div>
+    <p class="note">في <span class="m">1,2<span class="ov">3</span></span>: الرقم 3 يتكرر (9 واحدة)، والرقم 2 بعد الفاصلة لا يتكرر (0 واحد)، فالمقام 90.</p>
+    <div class="ob">
+      <p class="ob-h"><span class="badge">MEB · 3</span>من كتيّب الوزارة</p>
+      <div class="tq"><p>Fatih, hesap makinesinde bir doğal sayıyı sıfırdan farklı bir doğal sayıya bölmüştür. Ekranda <b>1,233333333333</b> görülmektedir.</p><p class="ask">Bu bölme işleminde kullanılabilecek bölünen ve bölen doğal sayıların toplamı <u>en az</u> kaçtır?</p></div>
+      <details class="sol"><summary>اعرض الحل</summary><div>
+        <ol class="steps"><li>الرقم 3 يتكرر: <span class="m">1,2<span class="ov">3</span></span>.</li><li>نحوّله إلى كسر: <span class="m"><span class="fr"><span>123 − 12</span><span>90</span></span> = <span class="fr"><span>111</span><span>90</span></span></span>.</li><li>«أقل مجموع» <span class="t" lang="tr">en az</span> يعني أبسط صورة. نقسم على 3: <span class="m"><span class="fr"><span>111</span><span>90</span></span> = <span class="fr"><span>37</span><span>30</span></span></span>.</li><li><span class="m">37 + 30 = 67</span>.</li></ol>
+        <p class="ans">1,2<span class="ov">3</span> = <span class="fr"><span>37</span><span>30</span></span> → bölünen 37, bölen 30 → en az 37 + 30 = 67</p>
+      </div></details>
+    </div>
+  </div>
+
+  <h3 class="sec">✍️ تمارين (من ملف الـ100 سؤال)</h3>
+  <div class="prac">
+    <div class="pq"><span class="num">Soru 26</span><div class="tq"><span class="m"><span class="fr"><span>−15</span><span>8</span></span></span> rasyonel sayısının ondalık gösterimini yazınız.</div>
+      <details class="sol"><summary>الجواب</summary><div><p class="ans">−1,875</p><p><span class="m">15 ÷ 8 = 1,875</span> والإشارة سالبة.</p></div></details></div>
+    <div class="pq"><span class="num">Soru 29</span><div class="tq"><span class="m"><span class="fr"><span>−17</span><span>3</span></span></span> rasyonel sayısının ondalık gösterimi kaçtır?</div>
+      <details class="sol"><summary>الجواب</summary><div><p class="ans">−5,666… = −5,<span class="ov">6</span></p><p><span class="m">17 ÷ 3 = 5</span> والباقي 2، ثم الرقم 6 يتكرر.</p></div></details></div>
+    <div class="pq"><span class="num">Soru 32</span><div class="tq"><span class="m"><span class="fr"><span>51</span><span>15</span></span></span> rasyonel sayısının ondalık gösterimi kaçtır?</div>
+      <details class="sol"><summary>الجواب</summary><div><p class="ans"><span class="fr"><span>51</span><span>15</span></span> = <span class="fr"><span>17</span><span>5</span></span> = 3,4</p><p>بسّط على 3 أولاً، ثم <span class="m"><span class="fr"><span>17</span><span>5</span></span> = <span class="fr"><span>34</span><span>10</span></span></span>.</p></div></details></div>
+    <div class="pq"><span class="num">Soru 42</span><div class="tq">Un çuvalının kütlesi <span class="m"><span class="fr"><span>110</span><span>4</span></span></span> kg’dır. Ondalık gösterimi kaça eşittir?</div>
+      <details class="sol"><summary>الجواب</summary><div><p class="ans">27,5 kg</p><p><span class="m"><span class="fr"><span>110</span><span>4</span></span> = <span class="fr"><span>55</span><span>2</span></span> = 27,5</span>.</p></div></details></div>
+    <div class="pq"><span class="num">Soru 45</span><div class="tq"><span class="m"><span class="fr"><span>48</span><span>15</span></span></span> = a,b ise a + b kaçtır?</div>
+      <details class="sol"><summary>الجواب</summary><div><p class="ans"><span class="fr"><span>48</span><span>15</span></span> = <span class="fr"><span>16</span><span>5</span></span> = 3,2 → a + b = 3 + 2 = 5</p></div></details></div>
+    <div class="pq"><span class="num">Soru 47</span><div class="tq">Nilay: <span class="m"><span class="fr"><span>7</span><span>50</span></span> = <span class="fr"><span>7 · a</span><span>50 · a</span></span> = <span class="fr"><span>14</span><span>100</span></span> = 0,14</span>. a kaçtır?</div>
+      <details class="sol"><summary>الجواب</summary><div><p class="ans">a = 2</p><p><span class="m">50 · 2 = 100</span>: كبّرنا المقام إلى 100.</p></div></details></div>
+    <div class="pq"><span class="num">Soru 36</span><div class="tq">■ bir doğal sayı ve <span class="m"><span class="fr"><span>■</span><span>25</span></span></span> = 0,64 ise <span class="m"><span class="fr"><span>■</span><span>20</span></span></span> sayısının ondalık gösterimi kaçtır?</div>
+      <details class="sol"><summary>الجواب</summary><div><p class="ans">■ = 16 → <span class="fr"><span>16</span><span>20</span></span> = 0,8</p><p><span class="m">0,64 = <span class="fr"><span>64</span><span>100</span></span> = <span class="fr"><span>16</span><span>25</span></span></span>، إذن ■ = 16.</p></div></details></div>
+    <div class="pq"><span class="num">Soru 35</span><div class="tq"><span class="m"><span class="fr"><span>4</span><span>11</span></span></span> sayısının ondalık gösteriminde virgülden sonraki 1257. basamakta hangi rakam bulunur?</div>
+      <details class="sol"><summary>الجواب</summary><div><p class="ans">0,363636… → 3</p><p>في الخانات الفردية 3 وفي الزوجية 6. والعدد 1257 فردي.</p></div></details></div>
+  </div>
+  <div class="done-btn"><button type="button" data-done="d2" aria-pressed="false">فهمت الدرس 2</button></div>
+</section>
+
+<!-- ======================= LESSON 3 ======================= -->
+<section class="lesson" id="d3" style="--tc:var(--t3)">
+  <div class="lh">
+    <span class="n">3</span>
+    <div>
+      <h2>المقارنة والترتيب</h2>
+      <div class="sub"><span class="t">Karşılaştırma ve sıralama</span><span class="m">MAT.7.1.3</span><span class="chip">1–2 سؤال</span></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3><span class="k">3.1</span>الرموز والكلمات</h3>
+    <div class="grid2">
+      <div class="mini"><b><span class="m">&lt;</span> <span class="t" lang="tr">küçüktür</span></b> أصغر من<br><b><span class="m">&gt;</span> <span class="t" lang="tr">büyüktür</span></b> أكبر من<br><span class="note">فتحة الرمز دائماً نحو العدد الأكبر.</span></div>
+      <div class="mini"><b><span class="t" lang="tr">Küçükten büyüğe</span></b> من الأصغر إلى الأكبر، نستعمل <span class="m">&lt;</span><br><b><span class="t" lang="tr">Büyükten küçüğe</span></b> من الأكبر إلى الأصغر، نستعمل <span class="m">&gt;</span></div>
+    </div>
+    <svg class="fig" viewBox="0 0 640 80" role="img" aria-label="على خط الأعداد اليسار أصغر واليمين أكبر">
+      <line class="axis" x1="30" y1="40" x2="610" y2="40"/>
+      <g id="cmp-ticks"></g>
+      <text x="40" y="18" class="mut" font-size="14">← daha küçük</text><text x="600" y="18" text-anchor="end" class="mut" font-size="14">daha büyük →</text>
+    </svg>
+  </div>
+
+  <div class="card">
+    <h3><span class="k">3.2</span>قواعد المقارنة</h3>
+    <div class="rule"><b>1 · السالب أصغر من الصفر، والصفر أصغر من الموجب</b><div class="eq" style="margin:4px 0 0">−<span class="fr"><span>7</span><span>3</span></span> &lt; 0 &lt; <span class="fr"><span>1</span><span>2</span></span></div></div>
+    <div class="rule"><b>2 · نفس المقام (موجبة): البسط الأكبر هو الأكبر</b><div class="eq" style="margin:4px 0 0"><span class="fr"><span>5</span><span>7</span></span> &gt; <span class="fr"><span>3</span><span>7</span></span></div></div>
+    <div class="rule"><b>3 · السالبة بالعكس! الأبعد عن الصفر هو الأصغر</b><div class="eq" style="margin:4px 0 0">−7 &lt; −2       −<span class="fr"><span>14</span><span>6</span></span> &lt; −<span class="fr"><span>5</span><span>6</span></span> &lt; −<span class="fr"><span>4</span><span>6</span></span></div><span class="note">مثل الدَّين: من عليه 14 أفقر ممّن عليه 4.</span></div>
+    <div class="rule"><b>4 · نفس البسط (موجبة): المقام الأصغر هو الأكبر</b><div class="eq" style="margin:4px 0 0"><span class="fr"><span>1</span><span>4</span></span> &gt; <span class="fr"><span>1</span><span>5</span></span>       <span class="fr"><span>1</span><span>38</span></span> &gt; <span class="fr"><span>1</span><span>49</span></span></div><span class="note">قطعة من كعكة مقسومة على 4 أكبر من قطعة من كعكة مقسومة على 5.</span></div>
+    <div class="rule"><b>5 · مختلفة تماماً: وحّد المقامات <span class="t" lang="tr">paydaları eşitle</span> أو حوّل إلى عشري</b><div class="eq" style="margin:4px 0 0"><span class="fr"><span>2</span><span>3</span></span> ? <span class="fr"><span>3</span><span>4</span></span> → <span class="fr"><span>8</span><span>12</span></span> &lt; <span class="fr"><span>9</span><span>12</span></span></div></div>
+    <div class="rule"><b>6 · العدد الكسري: قارن الجزء الصحيح أولاً</b><div class="eq" style="margin:4px 0 0"><span class="mx">3<span class="fr"><span>1</span><span>8</span></span></span> &gt; <span class="mx">2<span class="fr"><span>7</span><span>8</span></span></span></div></div>
+
+    <div class="tool">
+      <b>🎯 اضغط على العدد الأكبر</b>
+      <div class="cmp">
+        <div class="pair" data-big="b"><div class="bt"><button class="btn" type="button" data-side="a"><span class="fr"><span>3</span><span>7</span></span></button><span class="vs">أم</span><button class="btn" type="button" data-side="b"><span class="fr"><span>5</span><span>7</span></span></button></div><div class="why2">نفس المقام: البسط الأكبر أكبر.</div></div>
+        <div class="pair" data-big="a"><div class="bt"><button class="btn" type="button" data-side="a">−<span class="fr"><span>3</span><span>7</span></span></button><span class="vs">أم</span><button class="btn" type="button" data-side="b">−<span class="fr"><span>5</span><span>7</span></span></button></div><div class="why2">سالبة: الأقرب إلى الصفر أكبر.</div></div>
+        <div class="pair" data-big="b"><div class="bt"><button class="btn" type="button" data-side="a"><span class="fr"><span>1</span><span>5</span></span></button><span class="vs">أم</span><button class="btn" type="button" data-side="b"><span class="fr"><span>1</span><span>4</span></span></button></div><div class="why2">نفس البسط: المقام الأصغر أكبر.</div></div>
+        <div class="pair" data-big="b"><div class="bt"><button class="btn" type="button" data-side="a">−<span class="fr"><span>2</span><span>5</span></span></button><span class="vs">أم</span><button class="btn" type="button" data-side="b"><span class="fr"><span>1</span><span>9</span></span></button></div><div class="why2">الموجب أكبر من أي سالب.</div></div>
+        <div class="pair" data-big="b"><div class="bt"><button class="btn" type="button" data-side="a"><span class="fr"><span>2</span><span>3</span></span></button><span class="vs">أم</span><button class="btn" type="button" data-side="b"><span class="fr"><span>3</span><span>4</span></span></button></div><div class="why2"><span class="m"><span class="fr"><span>8</span><span>12</span></span> &lt; <span class="fr"><span>9</span><span>12</span></span></span></div></div>
+        <div class="pair" data-big="a"><div class="bt"><button class="btn" type="button" data-side="a">−<span class="fr"><span>7</span><span>3</span></span></button><span class="vs">أم</span><button class="btn" type="button" data-side="b">−<span class="fr"><span>7</span><span>2</span></span></button></div><div class="why2"><span class="m">−2,33… &gt; −3,5</span>: الأقرب إلى الصفر أكبر.</div></div>
+        <div class="pair" data-big="a"><div class="bt"><button class="btn" type="button" data-side="a"><span class="fr"><span>17</span><span>4</span></span></button><span class="vs">أم</span><button class="btn" type="button" data-side="b"><span class="fr"><span>20</span><span>6</span></span></button></div><div class="why2"><span class="m">4,25 &gt; 3,33…</span></div></div>
+        <div class="pair" data-big="a"><div class="bt"><button class="btn" type="button" data-side="a">−1,2</button><span class="vs">أم</span><button class="btn" type="button" data-side="b">−1,25</button></div><div class="why2"><span class="m">−1,20 &gt; −1,25</span>: الأقرب إلى الصفر أكبر.</div></div>
+      </div>
+      <p class="out" id="cmp-out" aria-live="polite"></p>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3><span class="k">3.3</span>كم عدداً صحيحاً بين عددين؟</h3>
+    <ol class="steps">
+      <li>حوّل الكسرين إلى عدد كسري.</li>
+      <li>اكتب الأعداد الصحيحة التي بينهما، <b>بدون</b> الطرفين.</li>
+      <li>عُدّها.</li>
+    </ol>
+    <div class="eq">−<span class="mx">4<span class="fr"><span>3</span><span>7</span></span></span> … <span class="fr"><span>9</span><span>4</span></span> = <span class="mx">2<span class="fr"><span>1</span><span>4</span></span></span> → −4, −3, −2, −1, 0, 1, 2 → 7</div>
+    <p class="note"><span class="m">−<span class="mx">4<span class="fr"><span>3</span><span>7</span></span></span></span> أصغر من <span class="m">−4</span>، لذلك <span class="m">−4</span> داخل المجال.</p>
+  </div>
+
+  <div class="ob">
+    <p class="ob-h"><span class="badge">MEB · 10</span>من كتيّب الوزارة: أين أخطأ Efe؟</p>
+    <div class="tq">
+      <p>Sayıları küçükten büyüğe sıralayınız: <span class="m">−<span class="fr"><span>2</span><span>3</span></span></span>, <span class="m">−<span class="fr"><span>5</span><span>6</span></span></span>, <span class="m"><span class="fr"><span>1</span><span>2</span></span></span>, <span class="m">−<span class="fr"><span>7</span><span>3</span></span></span></p>
+      <p><b>1. Adım:</b> Yalnızca <span class="m"><span class="fr"><span>1</span><span>2</span></span></span> pozitif olduğu için en büyüktür.</p>
+      <p><b>2. Adım:</b> Paydaları 6’da eşitledi: <span class="m">−<span class="fr"><span>4</span><span>6</span></span></span>, <span class="m">−<span class="fr"><span>5</span><span>6</span></span></span>, <span class="m">−<span class="fr"><span>14</span><span>6</span></span></span></p>
+      <p><b>3. Adım:</b> <span class="m">−<span class="fr"><span>4</span><span>6</span></span> &lt; −<span class="fr"><span>5</span><span>6</span></span> &lt; −<span class="fr"><span>14</span><span>6</span></span></span></p>
+      <p><b>4. Adım:</b> <span class="m">−<span class="fr"><span>2</span><span>3</span></span> &lt; −<span class="fr"><span>5</span><span>6</span></span> &lt; −<span class="fr"><span>7</span><span>3</span></span> &lt; <span class="fr"><span>1</span><span>2</span></span></span></p>
+      <p class="ask">Efe’nin sıralaması doğru mudur? Yanlış ise ilk hatayı hangi adımda yaptığını açıklayınız ve doğru sıralamayı yazınız.</p>
+    </div>
+    <details class="sol"><summary>اعرض الحل</summary><div>
+      <ol class="steps"><li>الخطوتان 1 و 2 صحيحتان.</li><li>الخطوة 3 خطأ: في الأعداد <b>السالبة</b> صاحب البسط الأكبر هو <b>الأصغر</b>. الصحيح: <span class="m">−<span class="fr"><span>14</span><span>6</span></span> &lt; −<span class="fr"><span>5</span><span>6</span></span> &lt; −<span class="fr"><span>4</span><span>6</span></span></span>.</li></ol>
+      <p class="ans">Yanlıştır, ilk hata 3. adımdadır. Negatif sayılarda payı büyük olan (mutlak değeri büyük olan) daha küçüktür. Doğru: −<span class="fr"><span>7</span><span>3</span></span> &lt; −<span class="fr"><span>5</span><span>6</span></span> &lt; −<span class="fr"><span>2</span><span>3</span></span> &lt; <span class="fr"><span>1</span><span>2</span></span></p>
+    </div></details>
+  </div>
+
+  <div class="ob">
+    <p class="ob-h"><span class="badge">MEB · 11</span>من كتيّب الوزارة (صعب قليلاً)</p>
+    <div class="tq">
+      <p>Tahtadaki sayılar: <span class="m">−<span class="fr"><span>45</span><span>44</span></span></span>, <span class="m">−<span class="fr"><span>39</span><span>38</span></span></span>, <span class="m">−<span class="fr"><span>50</span><span>49</span></span></span>. Bir öğrenci şöyle sıralamış: <span class="m">−<span class="fr"><span>50</span><span>49</span></span> &lt; −<span class="fr"><span>45</span><span>44</span></span> &lt; −<span class="fr"><span>39</span><span>38</span></span></span></p>
+      <p class="ask">Öğrencinin sıralaması doğru mudur? Gerekçesiyle açıklayınız.</p>
+    </div>
+    <details class="sol"><summary>اعرض الحل</summary><div>
+      <ol class="steps">
+        <li>كل كسر = <span class="m">1</span> وقطعة صغيرة: <span class="m"><span class="fr"><span>45</span><span>44</span></span> = <span class="mx">1<span class="fr"><span>1</span><span>44</span></span></span></span>، <span class="m"><span class="fr"><span>39</span><span>38</span></span> = <span class="mx">1<span class="fr"><span>1</span><span>38</span></span></span></span>، <span class="m"><span class="fr"><span>50</span><span>49</span></span> = <span class="mx">1<span class="fr"><span>1</span><span>49</span></span></span></span>.</li>
+        <li>القطعة الأكبر صاحبة المقام الأصغر: <span class="m"><span class="fr"><span>1</span><span>38</span></span> &gt; <span class="fr"><span>1</span><span>44</span></span> &gt; <span class="fr"><span>1</span><span>49</span></span></span>.</li>
+        <li>لكن الأعداد سالبة، فالأكبر قيمةً مطلقة هو الأصغر: <span class="m">−<span class="fr"><span>39</span><span>38</span></span></span> هو الأصغر.</li>
+      </ol>
+      <p class="ans">Yanlıştır. Doğru sıralama: −<span class="fr"><span>39</span><span>38</span></span> &lt; −<span class="fr"><span>45</span><span>44</span></span> &lt; −<span class="fr"><span>50</span><span>49</span></span></p>
+    </div></details>
+  </div>
+
+  <h3 class="sec">✍️ تمارين (من ملف الـ100 سؤال)</h3>
+  <div class="prac">
+    <div class="pq"><span class="num">Soru 54</span><div class="tq"><span class="m"><span class="fr"><span>1</span><span>5</span></span> &gt; <span class="fr"><span>1</span><span>4</span></span></span>;  <span class="m">−<span class="fr"><span>7</span><span>3</span></span> &gt; −<span class="fr"><span>7</span><span>2</span></span></span>;  <span class="m">−<span class="fr"><span>2</span><span>5</span></span> &gt; −<span class="fr"><span>2</span><span>9</span></span></span>;  <span class="m"><span class="fr"><span>17</span><span>4</span></span> &gt; <span class="fr"><span>20</span><span>6</span></span></span> — Kaç tanesi doğrudur?</div>
+      <details class="sol"><summary>الجواب</summary><div><p class="ans">2 tane (2. ve 4.)</p><p>الأول خطأ (<span class="m"><span class="fr"><span>1</span><span>4</span></span></span> أكبر)، والثالث خطأ (<span class="m">−<span class="fr"><span>2</span><span>9</span></span></span> أقرب إلى الصفر).</p></div></details></div>
+    <div class="pq"><span class="num">Soru 55</span><div class="tq">Ankara −4 °C, Çorum −6 °C, Çankırı 0 °C, Yozgat −3 °C. Kaç ilin sıcaklığı −5 °C’tan düşüktür?</div>
+      <details class="sol"><summary>الجواب</summary><div><p class="ans">1 (Çorum, −6 °C)</p></div></details></div>
+    <div class="pq"><span class="num">Soru 59</span><div class="tq">−12, −7, 0, −10, 4, −9 sayılarından kaç tanesi −8’den büyüktür?</div>
+      <details class="sol"><summary>الجواب</summary><div><p class="ans">3 (−7, 0, 4)</p><p><span class="m">−9</span> و <span class="m">−10</span> و <span class="m">−12</span> أبعد عن الصفر، فهي أصغر.</p></div></details></div>
+    <div class="pq"><span class="num">Soru 61</span><div class="tq">Sayı doğrusunda −6 ile −2 arasında kaç tam sayı vardır?</div>
+      <details class="sol"><summary>الجواب</summary><div><p class="ans">3 (−5, −4, −3)</p></div></details></div>
+    <div class="pq"><span class="num">Soru 62</span><div class="tq"><span class="m"><span class="fr"><span>1</span><span>8</span></span> &lt; <span class="fr"><span>a</span><span>24</span></span> &lt; <span class="fr"><span>1</span><span>3</span></span></span> sıralamasına göre a doğal sayısının alabileceği değerler toplamı kaçtır?</div>
+      <details class="sol"><summary>الجواب</summary><div><p class="ans"><span class="fr"><span>3</span><span>24</span></span> &lt; <span class="fr"><span>a</span><span>24</span></span> &lt; <span class="fr"><span>8</span><span>24</span></span> → a = 4, 5, 6, 7 → 22</p><p>وحّدنا المقامات على 24.</p></div></details></div>
+    <div class="pq"><span class="num">Soru 66</span><div class="tq"><span class="m">−<span class="fr"><span>21</span><span>5</span></span></span> sayısından büyük kaç tane negatif tam sayı vardır?</div>
+      <details class="sol"><summary>الجواب</summary><div><p class="ans">4 (−4, −3, −2, −1)</p><p><span class="m">−<span class="fr"><span>21</span><span>5</span></span> = −<span class="mx">4<span class="fr"><span>1</span><span>5</span></span></span> = −4,2</span>.</p></div></details></div>
+    <div class="pq"><span class="num">Soru 73</span><div class="tq">a = <span class="m"><span class="fr"><span>4</span><span>7</span></span></span>, b = <span class="m"><span class="fr"><span>5</span><span>11</span></span></span>, c = <span class="m"><span class="fr"><span>1</span><span>2</span></span></span> sayılarının büyükten küçüğe sıralanışı nasıldır?</div>
+      <details class="sol"><summary>الجواب</summary><div><p class="ans">a &gt; c &gt; b</p><p>قارن مع النصف: <span class="m"><span class="fr"><span>4</span><span>7</span></span></span> أكبر من النصف، <span class="m"><span class="fr"><span>5</span><span>11</span></span></span> أصغر من النصف.</p></div></details></div>
+    <div class="pq"><span class="num">Soru 75</span><div class="tq">Mikroskoplar: K <span class="m"><span class="fr"><span>11</span><span>5</span></span></span>, L <span class="m"><span class="fr"><span>17</span><span>10</span></span></span>, M <span class="m"><span class="fr"><span>3</span><span>2</span></span></span>, N <span class="m"><span class="fr"><span>8</span><span>3</span></span></span>. En büyükten en küçüğe sıralayınız.</div>
+      <details class="sol"><summary>الجواب</summary><div><p class="ans">N &gt; K &gt; L &gt; M</p><p><span class="m">2,6<span class="ov">6</span></span>، <span class="m">2,2</span>، <span class="m">1,7</span>، <span class="m">1,5</span>.</p></div></details></div>
+  </div>
+  <div class="done-btn"><button type="button" data-done="d3" aria-pressed="false">فهمت الدرس 3</button></div>
+</section>
+
+<!-- ======================= LESSON 4 ======================= -->
+<section class="lesson" id="d4" style="--tc:var(--t4)">
+  <div class="lh">
+    <span class="n">4</span>
+    <div>
+      <h2>العمليات والمسائل</h2>
+      <div class="sub"><span class="t">Rasyonel sayılarla işlemler ve problemler</span><span class="m">MAT.7.1.4</span><span class="chip">1–2 سؤال</span></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3><span class="k">4.1</span>جمع وطرح الأعداد الصحيحة</h3>
+    <div class="rule"><b>الجمع</b>
+      <ol>
+        <li><b>نفس الإشارة:</b> اجمع واحتفظ بالإشارة. <span class="m">(−3) + (−5) = −8</span></li>
+        <li><b>إشارتان مختلفتان:</b> اطرح الصغير من الكبير، وخذ إشارة الأكبر. <span class="m">(−1000) + (+1500) = +500</span></li>
+      </ol>
+    </div>
+    <div class="rule"><b>الطرح = جمع المعاكس</b>اقلب إشارة العدد الثاني ثم اجمع:<div class="eq" style="margin:6px 0 0">a − (−b) = a + b        (+780) − (−287) = 780 + 287 = 1067</div></div>
+    <div class="trap"><b>⭐ أهم قاعدة في المسائل</b><b style="display:inline;color:var(--ink)">التغيّر = الأخير − الأول</b> <span class="t" lang="tr">Değişim = son − ilk</span>. الحرارة من <span class="m">+14</span> إلى <span class="m">−4</span>: <span class="m">(−4) − (+14) = −18</span>.</div>
+  </div>
+
+  <div class="card">
+    <h3><span class="k">4.2</span>الضرب والقسمة والإشارات</h3>
+    <div class="grid2">
+      <div class="tbl"><table dir="ltr">
+        <tr><th>×  ÷</th><th>sonuç</th></tr>
+        <tr><td>(+) (+)</td><td style="color:var(--ok)"><b>+</b></td></tr>
+        <tr><td>(−) (−)</td><td style="color:var(--ok)"><b>+</b></td></tr>
+        <tr><td>(+) (−)</td><td style="color:var(--red)"><b>−</b></td></tr>
+        <tr><td>(−) (+)</td><td style="color:var(--red)"><b>−</b></td></tr>
+      </table></div>
+      <div class="mini"><b>إشارتان متشابهتان ← موجب<br>إشارتان مختلفتان ← سالب</b>
+        <div class="eq">(+4) · (−12) = −48</div><div class="eq">(−104) ÷ (−8) = +13</div></div>
+    </div>
+    <div class="rule"><b>القوى <span class="t" lang="tr">Üslü ifadeler</span></b>
+      <div class="eq" style="margin:4px 0">(−3)<sup>2</sup> = (−3)·(−3) = +9     (−3)<sup>3</sup> = −27     (−3)<sup>4</sup> = +81</div>
+      العدد السالب: <b>أُس زوجي ← موجب</b>، <b>أُس فردي ← سالب</b>. لذلك <span class="m">(−3)<sup>18</sup></span> موجب.
+    </div>
+  </div>
+
+  <div class="card">
+    <h3><span class="k">4.3</span>عمليات الكسور</h3>
+    <div class="grid2">
+      <div class="mini"><b>عدد كسري ← كسر</b><div class="eq"><span class="mx">2<span class="fr"><span>1</span><span>4</span></span></span> = <span class="fr"><span>2 · 4 + 1</span><span>4</span></span> = <span class="fr"><span>9</span><span>4</span></span></div></div>
+      <div class="mini"><b>كسر ← عدد كسري</b><div class="eq"><span class="fr"><span>17</span><span>4</span></span> = <span class="mx">4<span class="fr"><span>1</span><span>4</span></span></span>   (17 ÷ 4 = 4, kalan 1)</div></div>
+      <div class="mini"><b>الجمع والطرح: وحّد المقامات</b><div class="eq"><span class="fr"><span>11</span><span>4</span></span> + <span class="fr"><span>2</span><span>3</span></span> = <span class="fr"><span>33</span><span>12</span></span> + <span class="fr"><span>8</span><span>12</span></span> = <span class="fr"><span>41</span><span>12</span></span></div></div>
+      <div class="mini"><b>الضرب: بسط × بسط، مقام × مقام</b><div class="eq"><span class="fr"><span>2</span><span>3</span></span> · <span class="fr"><span>1</span><span>4</span></span> = <span class="fr"><span>2</span><span>12</span></span> = <span class="fr"><span>1</span><span>6</span></span></div></div>
+    </div>
+    <div class="rule"><b>القسمة: اترك الأول، اقلب الثاني، واضرب</b><div class="eq" style="margin:4px 0 0"><span class="fr"><span>2</span><span>3</span></span> ÷ <span class="fr"><span>3</span><span>4</span></span> = <span class="fr"><span>2</span><span>3</span></span> · <span class="fr"><span>4</span><span>3</span></span> = <span class="fr"><span>8</span><span>9</span></span></div></div>
+    <div class="ob">
+      <p class="ob-h"><span class="badge">MEB · 20</span>من كتيّب الوزارة</p>
+      <div class="tq"><p>Hasan Usta, uzunluğu <span class="m"><span class="mx">18<span class="fr"><span>3</span><span>4</span></span></span></span> cm olan bir ekmeği makine yardımıyla 6 eş dilime ayırmaktadır.</p><p class="ask">Bir dilim ekmeğin kalınlığı kaç cm’dir?</p></div>
+      <details class="sol"><summary>اعرض الحل</summary><div>
+        <ol class="steps"><li>نقسم الطول على 6. أولاً: <span class="m"><span class="mx">18<span class="fr"><span>3</span><span>4</span></span></span> = <span class="fr"><span>75</span><span>4</span></span></span>.</li><li><span class="m"><span class="fr"><span>75</span><span>4</span></span> ÷ 6 = <span class="fr"><span>75</span><span>4</span></span> · <span class="fr"><span>1</span><span>6</span></span> = <span class="fr"><span>75</span><span>24</span></span> = <span class="fr"><span>25</span><span>8</span></span></span>.</li></ol>
+        <p class="ans"><span class="mx">18<span class="fr"><span>3</span><span>4</span></span></span> ÷ 6 = <span class="fr"><span>75</span><span>24</span></span> = <span class="fr"><span>25</span><span>8</span></span> = <span class="mx">3<span class="fr"><span>1</span><span>8</span></span></span> cm</p>
+      </div></details>
+    </div>
+    <div class="ob">
+      <p class="ob-h"><span class="badge">MEB · 16</span>من كتيّب الوزارة</p>
+      <div class="tq"><p>Cetvelde kalemin bir ucu 0’da, diğer ucu 6,5’te. Kalemin boyu kullanıldıkça <span class="m"><span class="mx">2<span class="fr"><span>1</span><span>4</span></span></span></span> cm kısalmıştır. 4 cm’den kısa kalemler kullanılmaz.</p><p class="ask">Kalan kalem kullanılabilir mi? İşlemlerinizi gösteriniz.</p></div>
+      <details class="sol"><summary>اعرض الحل</summary><div>
+        <ol class="steps"><li>طول القلم <span class="m">6,5 = <span class="mx">6<span class="fr"><span>1</span><span>2</span></span></span> = <span class="fr"><span>13</span><span>2</span></span></span> cm.</li><li><span class="m"><span class="mx">2<span class="fr"><span>1</span><span>4</span></span></span> = <span class="fr"><span>9</span><span>4</span></span></span>. نوحّد المقامات: <span class="m"><span class="fr"><span>13</span><span>2</span></span> = <span class="fr"><span>26</span><span>4</span></span></span>.</li><li><span class="m"><span class="fr"><span>26</span><span>4</span></span> − <span class="fr"><span>9</span><span>4</span></span> = <span class="fr"><span>17</span><span>4</span></span> = <span class="mx">4<span class="fr"><span>1</span><span>4</span></span></span></span> cm، وهو أكبر من 4.</li></ol>
+        <p class="ans"><span class="fr"><span>26</span><span>4</span></span> − <span class="fr"><span>9</span><span>4</span></span> = <span class="fr"><span>17</span><span>4</span></span> = <span class="mx">4<span class="fr"><span>1</span><span>4</span></span></span> cm &gt; 4 cm → Kalem kullanılabilir.</p>
+      </div></details>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3><span class="k">4.4</span>ترتيب العمليات <span class="t">İşlem önceliği</span></h3>
+    <ol class="steps">
+      <li><b>الأقواس</b> <span class="t" lang="tr">parantez</span></li>
+      <li><b>القوى</b> <span class="t" lang="tr">üslü ifade</span></li>
+      <li><b>الضرب والقسمة</b>، من اليسار إلى اليمين <span class="t" lang="tr">soldan sağa</span></li>
+      <li><b>الجمع والطرح</b>، من اليسار إلى اليمين</li>
+    </ol>
+    <p class="note">«من اليسار إلى اليمين» لأن العملية مكتوبة بالتركي: نبدأ من أول العملية على اليسار.</p>
+    <div class="ob">
+      <p class="ob-h"><span class="badge">MEB · 21</span>من كتيّب الوزارة: Deniz أم Mert؟</p>
+      <div class="tq"><p>İşlem: <span class="m">3 − <span class="fr"><span>1</span><span>4</span></span> + <span class="fr"><span>2</span><span>3</span></span></span></p><p><b>Deniz:</b> Önce toplama yapmalıyız (<span class="m"><span class="fr"><span>1</span><span>4</span></span> + <span class="fr"><span>2</span><span>3</span></span></span>), sonra 3’ten çıkarmalıyız.</p><p><b>Mert:</b> Önce çıkarma yapılmalı (<span class="m">3 − <span class="fr"><span>1</span><span>4</span></span></span>), sonra sonuçla <span class="m"><span class="fr"><span>2</span><span>3</span></span></span>’yi toplamalıyız.</p><p class="ask">Hangisi işlem önceliğine uygun hareket etmiştir? İşlemin sonucunu bulunuz.</p></div>
+      <details class="sol"><summary>اعرض الحل</summary><div>
+        <ol class="steps"><li>الجمع والطرح لهما نفس الأولوية، فنبدأ من اليسار: الطرح أولاً. إذن Mert على حق.</li><li><span class="m">3 − <span class="fr"><span>1</span><span>4</span></span> = <span class="fr"><span>12</span><span>4</span></span> − <span class="fr"><span>1</span><span>4</span></span> = <span class="fr"><span>11</span><span>4</span></span></span>.</li><li><span class="m"><span class="fr"><span>11</span><span>4</span></span> + <span class="fr"><span>2</span><span>3</span></span> = <span class="fr"><span>33</span><span>12</span></span> + <span class="fr"><span>8</span><span>12</span></span> = <span class="fr"><span>41</span><span>12</span></span></span>.</li></ol>
+        <p class="ans">Mert haklıdır: aynı öncelikteki işlemler soldan sağa yapılır. Sonuç: <span class="fr"><span>41</span><span>12</span></span> = <span class="mx">3<span class="fr"><span>5</span><span>12</span></span></span></p>
+      </div></details>
+    </div>
+    <div class="ob">
+      <p class="ob-h"><span class="badge">MEB · 22</span>من كتيّب الوزارة: كسور فوق كسور</p>
+      <div class="tq"><p>Hangi işlemin öncelikli olduğunu açıklayarak sonuçları bulunuz.</p><p style="font-size:1.25em;line-height:2.6;white-space:pre-wrap">a) <span class="m"><span class="fr"><span>0,<span class="ov">9</span></span><span>1 + <span class="fr"><span>3</span><span>4</span></span></span></span></span>      b) <span class="m"><span class="fr"><span><span class="fr"><span>1</span><span>2</span></span> − <span class="fr"><span>1</span><span>3</span></span></span><span>3</span></span></span>      c) <span class="m"><span class="fr"><span><span class="fr"><span>2</span><span>3</span></span></span><span>4</span></span> − <span class="fr"><span>2</span><span><span class="fr"><span>3</span><span>4</span></span></span></span></span></p></div>
+      <details class="sol"><summary>اعرض الحل</summary><div>
+        <p>قاعدة: خط الكسر الكبير يعني «قسمة». احسب ما فوقه وما تحته أولاً.</p>
+        <ol class="steps">
+          <li>a) <span class="m">0,<span class="ov">9</span> = 1</span> و <span class="m">1 + <span class="fr"><span>3</span><span>4</span></span> = <span class="fr"><span>7</span><span>4</span></span></span>، إذن <span class="m">1 ÷ <span class="fr"><span>7</span><span>4</span></span> = <span class="fr"><span>4</span><span>7</span></span></span>.</li>
+          <li>b) <span class="m"><span class="fr"><span>1</span><span>2</span></span> − <span class="fr"><span>1</span><span>3</span></span> = <span class="fr"><span>3</span><span>6</span></span> − <span class="fr"><span>2</span><span>6</span></span> = <span class="fr"><span>1</span><span>6</span></span></span>، ثم <span class="m"><span class="fr"><span>1</span><span>6</span></span> ÷ 3 = <span class="fr"><span>1</span><span>18</span></span></span>.</li>
+          <li>c) <span class="m"><span class="fr"><span>2</span><span>3</span></span> ÷ 4 = <span class="fr"><span>2</span><span>12</span></span> = <span class="fr"><span>1</span><span>6</span></span></span> و <span class="m">2 ÷ <span class="fr"><span>3</span><span>4</span></span> = <span class="fr"><span>8</span><span>3</span></span></span>، ثم <span class="m"><span class="fr"><span>1</span><span>6</span></span> − <span class="fr"><span>16</span><span>6</span></span> = −<span class="fr"><span>15</span><span>6</span></span> = −<span class="fr"><span>5</span><span>2</span></span></span>.</li>
+        </ol>
+        <p class="ans">a) <span class="fr"><span>4</span><span>7</span></span>   b) <span class="fr"><span>1</span><span>18</span></span>   c) −<span class="fr"><span>5</span><span>2</span></span> = −<span class="mx">2<span class="fr"><span>1</span><span>2</span></span></span></p>
+      </div></details>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3><span class="k">4.5</span>خصائص العمليات <span class="t">İşlem özellikleri</span></h3>
+    <div class="tbl"><table>
+      <tr><th>الخاصية</th><th>الجمع</th><th>الضرب</th></tr>
+      <tr><td><span class="t" lang="tr">Değişme</span> التبديل</td><td><span class="m">a + b = b + a</span></td><td><span class="m">a · b = b · a</span></td></tr>
+      <tr><td><span class="t" lang="tr">Birleşme</span> التجميع</td><td><span class="m">(a + b) + c = a + (b + c)</span></td><td><span class="m">(a · b) · c = a · (b · c)</span></td></tr>
+      <tr><td><span class="t" lang="tr">Etkisiz eleman</span> المحايد</td><td><span class="m">a + 0 = a</span></td><td><span class="m">a · 1 = a</span></td></tr>
+      <tr><td><span class="t" lang="tr">Ters eleman</span> المعاكس</td><td><span class="m"><span class="fr"><span>3</span><span>4</span></span> + (−<span class="fr"><span>3</span><span>4</span></span>) = 0</span></td><td><span class="m">−<span class="fr"><span>2</span><span>3</span></span> · (−<span class="fr"><span>3</span><span>2</span></span>) = 1</span></td></tr>
+    </table></div>
+    <p class="note">المعاكس في الضرب: نقلب البسط والمقام، و<b>الإشارة تبقى كما هي</b>. معاكس <span class="m">−7</span> هو <span class="m">−<span class="fr"><span>1</span><span>7</span></span></span>.</p>
+    <div class="ob">
+      <p class="ob-h"><span class="badge">MEB · 17</span>من كتيّب الوزارة: الروبوت</p>
+      <div class="tq"><p>Robot: 1. hareket <span class="m"><span class="fr"><span>3</span><span>4</span></span></span> m geri, 2. hareket <span class="m"><span class="fr"><span>2</span><span>5</span></span></span> m ileri, 3. hareket <span class="m"><span class="fr"><span>3</span><span>4</span></span></span> m ileri. İleri pozitif, geri negatif.</p><p><span class="m">[(−<span class="fr"><span>3</span><span>4</span></span>) + (+<span class="fr"><span>2</span><span>5</span></span>)] + (+<span class="fr"><span>3</span><span>4</span></span>)</span></p><p class="ask">Toplama işleminin özelliklerini kullanarak robotun başlangıç noktasının hangi yönünde ve kaç metre uzağında olduğunu bulunuz. Kullandığınız özellikleri belirtiniz.</p></div>
+      <details class="sol"><summary>اعرض الحل</summary><div>
+        <ol class="steps">
+          <li><span class="t" lang="tr">Değişme</span>: نبدّل مكان العددين داخل القوس: <span class="m">[(+<span class="fr"><span>2</span><span>5</span></span>) + (−<span class="fr"><span>3</span><span>4</span></span>)] + (+<span class="fr"><span>3</span><span>4</span></span>)</span>.</li>
+          <li><span class="t" lang="tr">Birleşme</span>: ننقل القوس: <span class="m">(+<span class="fr"><span>2</span><span>5</span></span>) + [(−<span class="fr"><span>3</span><span>4</span></span>) + (+<span class="fr"><span>3</span><span>4</span></span>)]</span>.</li>
+          <li><span class="t" lang="tr">Ters eleman</span>: <span class="m">(−<span class="fr"><span>3</span><span>4</span></span>) + (+<span class="fr"><span>3</span><span>4</span></span>) = 0</span>.</li>
+          <li><span class="t" lang="tr">Etkisiz eleman</span>: <span class="m"><span class="fr"><span>2</span><span>5</span></span> + 0 = <span class="fr"><span>2</span><span>5</span></span></span>.</li>
+        </ol>
+        <p class="ans">Robot başlangıç noktasının <span class="fr"><span>2</span><span>5</span></span> m ilerisindedir. (Değişme, birleşme, ters eleman, etkisiz eleman)</p>
+      </div></details>
+    </div>
+    <div class="ob">
+      <p class="ob-h"><span class="badge">MEB · 18</span>من كتيّب الوزارة: البطاقات</p>
+      <div class="tq"><p>Her kartın ön ve arka yüzündeki sayıların çarpımı, çarpma işleminin etkisiz elemanına eşittir. Ön yüzler: <span class="m">−<span class="fr"><span>2</span><span>3</span></span></span>, <span class="m"><span class="fr"><span>4</span><span>5</span></span></span>, <span class="m">−<span class="fr"><span>3</span><span>2</span></span></span>, <span class="m"><span class="fr"><span>5</span><span>4</span></span></span>, −7</p><p class="ask">Arka yüzlerdeki sayıların çarpımını bulunuz. Hangi özellikleri kullanabilirsiniz?</p></div>
+      <details class="sol"><summary>اعرض الحل</summary><div>
+        <ol class="steps">
+          <li>المحايد في الضرب = 1، إذن الخلف هو <b>المقلوب</b> بنفس الإشارة: <span class="m">−<span class="fr"><span>3</span><span>2</span></span></span>, <span class="m"><span class="fr"><span>5</span><span>4</span></span></span>, <span class="m">−<span class="fr"><span>2</span><span>3</span></span></span>, <span class="m"><span class="fr"><span>4</span><span>5</span></span></span>, <span class="m">−<span class="fr"><span>1</span><span>7</span></span></span>.</li>
+          <li><span class="t" lang="tr">Değişme</span> و <span class="t" lang="tr">Birleşme</span>: نجمع كل عدد مع مقلوبه: <span class="m">(−<span class="fr"><span>3</span><span>2</span></span> · −<span class="fr"><span>2</span><span>3</span></span>) · (<span class="fr"><span>5</span><span>4</span></span> · <span class="fr"><span>4</span><span>5</span></span>) · (−<span class="fr"><span>1</span><span>7</span></span>)</span>.</li>
+          <li><span class="t" lang="tr">Ters eleman</span>: كل قوس = 1. <span class="t" lang="tr">Etkisiz eleman</span>: <span class="m">1 · 1 · (−<span class="fr"><span>1</span><span>7</span></span>) = −<span class="fr"><span>1</span><span>7</span></span></span>.</li>
+        </ol>
+        <p class="ans">Çarpım = −<span class="fr"><span>1</span><span>7</span></span></p>
+      </div></details>
+    </div>
+    <div class="ob">
+      <p class="ob-h"><span class="badge">MEB · 19</span>من كتيّب الوزارة</p>
+      <div class="tq"><p class="ask">(–3)<sup>1</sup>, (–3)<sup>2</sup>, (–3)<sup>3</sup>, (–3)<sup>4</sup> ifadelerini tekrarlı çarpım şeklinde yazıp değerlerini bulunuz. (–3)<sup>18</sup> pozitif mi negatif mi?</p></div>
+      <details class="sol"><summary>اعرض الحل</summary><div>
+        <div class="tbl"><table dir="ltr"><tr><th>Üslü</th><th>Tekrarlı çarpım</th><th>Değer</th></tr>
+          <tr><td>(–3)<sup>1</sup></td><td>(–3)</td><td>–3</td></tr><tr><td>(–3)<sup>2</sup></td><td>(–3)·(–3)</td><td>+9</td></tr>
+          <tr><td>(–3)<sup>3</sup></td><td>(–3)·(–3)·(–3)</td><td>–27</td></tr><tr><td>(–3)<sup>4</sup></td><td>(–3)·(–3)·(–3)·(–3)</td><td>+81</td></tr></table></div>
+        <p class="ans">(–3)<sup>18</sup> pozitiftir: negatif sayının çift kuvveti pozitiftir.</p>
+      </div></details>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3><span class="k">4.6</span>كيف أحلّ مسألة كلامية؟</h3>
+    <ol class="steps">
+      <li>اقرأ المسألة مرتين، وضع خطاً تحت الأرقام.</li>
+      <li>حدّد الإشارة لكل رقم: فوق/تحت، ربح/خسارة، أمام/خلف (جدول 1.2).</li>
+      <li>اكتب «الجملة العددية» <span class="t" lang="tr">sayı cümlesi</span>، أي العملية.</li>
+      <li>احسب خطوة خطوة.</li>
+      <li>اكتب الجواب مع الوحدة: <span class="t" lang="tr">metre, °C, TL, puan</span>.</li>
+    </ol>
+    <div class="ob">
+      <p class="ob-h"><span class="badge">MEB · 12</span>من كتيّب الوزارة: اكتب الجملة العددية</p>
+      <div class="tbl"><table>
+        <tr><th>الموقف</th><th><span class="t" lang="tr">Sayı cümlesi</span></th><th><span class="t" lang="tr">Sonuç</span></th></tr>
+        <tr><td>Arşimet MÖ 287، Harizmi MS 780. كم سنة بينهما؟</td><td><span class="m">(+780) − (−287)</span></td><td><span class="m">+1067</span></td></tr>
+        <tr><td>كل خطأ <span class="m">−8</span> نقاط، أنهى بـ <span class="m">−104</span>. كم سؤالاً؟</td><td><span class="m">(−104) ÷ (−8)</span></td><td><span class="m">+13</span></td></tr>
+        <tr><td>دَين 1000 TL، أودعت 1500 TL. الرصيد؟</td><td><span class="m">(−1000) + (+1500)</span></td><td><span class="m">+500</span></td></tr>
+        <tr><td>كل ركوب مترو <span class="m">−12</span> TL، ركب 4 مرات. التغيّر؟</td><td><span class="m">(+4) · (−12)</span></td><td><span class="m">−48</span></td></tr>
+      </table></div>
+    </div>
+    <div class="ob">
+      <p class="ob-h"><span class="badge">MEB · 13</span>من كتيّب الوزارة</p>
+      <div class="tq"><p>Mauna Kea Dağı’nın zirvesi deniz seviyesinden yaklaşık 4207 metre yukarıda, tabanı ise deniz seviyesinden yaklaşık 6000 metre aşağıdadır.</p><p class="ask">Tabanından zirvesine kadar olan yüksekliği yaklaşık kaç metredir?</p></div>
+      <details class="sol"><summary>اعرض الحل</summary><div>
+        <ol class="steps"><li>القمة <span class="m">+4207</span> والقاعدة <span class="m">−6000</span>.</li><li>الأخير − الأول: <span class="m">(+4207) − (−6000) = 4207 + 6000</span>.</li></ol>
+        <p class="ans">(+4207) − (−6000) = 10 207 m</p>
+      </div></details>
+    </div>
+    <div class="ob">
+      <p class="ob-h"><span class="badge">MEB · 14</span>من كتيّب الوزارة</p>
+      <div class="tq"><p>Başlangıç sıcaklığı +14 °C olan bir soğuk hava deposunun –4 °C’a kadar soğutulması hedefleniyor. Sistem, sıcaklığı her dakika 3 °C düşürüyor.</p><p class="ask">Kaç dakika sonra hedeflenen değere ulaşılır? İşlemlerle gösteriniz.</p></div>
+      <details class="sol"><summary>اعرض الحل</summary><div>
+        <ol class="steps"><li>التغيّر = الأخير − الأول: <span class="m">(−4) − (+14) = −18</span>.</li><li>كل دقيقة <span class="m">−3</span>: <span class="m">(−18) ÷ (−3) = 6</span>.</li></ol>
+        <p class="ans">(−4) − (+14) = −18;  (−18) ÷ (−3) = 6 dakika</p>
+      </div></details>
+    </div>
+    <div class="ob">
+      <p class="ob-h"><span class="badge">MEB · 15</span>من كتيّب الوزارة</p>
+      <div class="tq"><p>Rukiye 10 soruluk sınavda: her doğru +10 puan, her yanlış −5 puan, boş 0 puan. Cevap kâğıdına göre <b>4 doğru</b> (2, 4, 5, 6), <b>4 yanlış</b> (1, 3, 7, 10), <b>2 boş</b> (8, 9).</p><p class="ask">Rukiye kaç puan almıştır? İşlemlerinizi gösteriniz.</p></div>
+      <details class="sol"><summary>اعرض الحل</summary><div>
+        <ol class="steps"><li>الصحيح: <span class="m">4 · (+10) = +40</span>.</li><li>الخطأ: <span class="m">4 · (−5) = −20</span>.</li><li>الفارغ: <span class="m">2 · 0 = 0</span>.</li></ol>
+        <p class="ans">40 + (−20) + 0 = 20 puan</p>
+        <p class="note">في الامتحان الحقيقي عُدّ الصحيح والخطأ والفارغ بنفسك من ورقة الإجابة ومفتاح الحل.</p>
+      </div></details>
+    </div>
+  </div>
+
+  <h3 class="sec">✍️ تمارين (من ملف الـ100 سؤال)</h3>
+  <div class="prac">
+    <div class="pq"><span class="num">Soru 77</span><div class="tq">−18 °C’ta dondurulan yiyecek fırında 3 dakikada 18 °C ısınıyor. 5 dakika sonra sıcaklığı kaç °C olur?</div>
+      <details class="sol"><summary>الجواب</summary><div><p class="ans">18 ÷ 3 = 6 °C/dk;  −18 + 5 · 6 = 12 °C</p></div></details></div>
+    <div class="pq"><span class="num">Soru 80</span><div class="tq">Uçak deniz seviyesinden 8537 m yüksekte, denizaltı 248 m aşağıda. Uçak denizaltından kaç metre yüksektedir?</div>
+      <details class="sol"><summary>الجواب</summary><div><p class="ans">(+8537) − (−248) = 8785 m</p></div></details></div>
+    <div class="pq"><span class="num">Soru 78</span><div class="tq">Cansu harçlığının <span class="m"><span class="fr"><span>1</span><span>6</span></span></span>’ini ulaşım, <span class="m"><span class="fr"><span>3</span><span>5</span></span></span>’ünü yemek için ayırıyor. Geriye 7 TL kalıyor. Harçlığı kaç TL’dir?</div>
+      <details class="sol"><summary>الجواب</summary><div><p class="ans">1 − <span class="fr"><span>5</span><span>30</span></span> − <span class="fr"><span>18</span><span>30</span></span> = <span class="fr"><span>7</span><span>30</span></span> → <span class="fr"><span>7</span><span>30</span></span> = 7 TL → 30 TL</p><p>الجزء الباقي <span class="m"><span class="fr"><span>7</span><span>30</span></span></span> يساوي 7 ليرات، فكل جزء ليرة واحدة.</p></div></details></div>
+    <div class="pq"><span class="num">Soru 85</span><div class="tq">Ali 250 g’lık 4 paket aldı. Farklar: +12, −8, +6, −11 g. Toplam kütle kaç gramdır?</div>
+      <details class="sol"><summary>الجواب</summary><div><p class="ans">4 · 250 + (12 − 8 + 6 − 11) = 1000 − 1 = 999 g</p></div></details></div>
+    <div class="pq"><span class="num">Soru 92</span><div class="tq">20 soruluk test: doğru +5, yanlış −3 puan. Tamamını cevaplayan öğrenci 14 doğru yaptı. Kaç puan aldı?</div>
+      <details class="sol"><summary>الجواب</summary><div><p class="ans">14 · 5 + 6 · (−3) = 70 − 18 = 52 puan</p><p>أجاب عن الكل، إذن الخطأ <span class="m">20 − 14 = 6</span>.</p></div></details></div>
+    <div class="pq"><span class="num">Soru 95</span><div class="tq">32’yi −4’e bölmesi gereken Ali, 32’yi −4 ile çarpıyor. Bulduğu sayı, bulması gerekenden kaç eksiktir?</div>
+      <details class="sol"><summary>الجواب</summary><div><p class="ans">32 ÷ (−4) = −8;  32 · (−4) = −128;  −8 − (−128) = 120</p></div></details></div>
+    <div class="pq"><span class="num">Soru 97</span><div class="tq">Ağrı −7 °C. Erzurum, Ağrı’dan 5 °C daha az; Çorum, Erzurum’dan 15 °C daha fazla. Üç ilin sıcaklıkları toplamı kaçtır?</div>
+      <details class="sol"><summary>الجواب</summary><div><p class="ans">Erzurum −12, Çorum +3 → −7 + (−12) + 3 = −16 °C</p></div></details></div>
+    <div class="pq"><span class="num">Soru 99</span><div class="tq">Rafın genişliği 36 cm. Kalınlığı <span class="m"><span class="mx">1<span class="fr"><span>5</span><span>7</span></span></span></span> cm olan kitaplardan en fazla kaç tane sığar?</div>
+      <details class="sol"><summary>الجواب</summary><div><p class="ans">36 ÷ <span class="fr"><span>12</span><span>7</span></span> = 36 · <span class="fr"><span>7</span><span>12</span></span> = 21 kitap</p></div></details></div>
+    <div class="pq"><span class="num">Soru 100</span><div class="tq">Otobüse 1. durakta 22 kişi biniyor. İnen/binen: 2. durak 8/11, 3. durak 12/5, 4. durak 3/7, 5. durak 13/1. 5. duraktan sonra kaç yolcu var?</div>
+      <details class="sol"><summary>الجواب</summary><div><p class="ans">22 − 8 + 11 − 12 + 5 − 3 + 7 − 13 + 1 = 10</p><p>النازل سالب والراكب موجب.</p></div></details></div>
+    <div class="pq"><span class="num">Soru 90</span><div class="tq">Yumurtaların <span class="m"><span class="fr"><span>1</span><span>6</span></span></span>’i kırılıyor. Kalanların <span class="m"><span class="fr"><span>2</span><span>5</span></span></span>’i satılıyor. Sepette 30 yumurta kalıyor. Kaç yumurta satılmıştır?</div>
+      <details class="sol"><summary>الجواب</summary><div><p class="ans">60 yumurta: 10 kırık, 50 kalan, 50’nin <span class="fr"><span>2</span><span>5</span></span>’i = 20 satıldı</p><p>بعد البيع يبقى <span class="m"><span class="fr"><span>3</span><span>5</span></span></span> من الخمسين: <span class="m"><span class="fr"><span>3</span><span>5</span></span> · 50 = 30</span> ✓.</p></div></details></div>
+  </div>
+  <div class="done-btn"><button type="button" data-done="d4" aria-pressed="false">فهمت الدرس 4</button></div>
+</section>
+
+<!-- ======================= EXAM PHRASES ======================= -->
+<section class="lesson" id="yaz" style="--tc:var(--pen)">
+  <div class="lh"><span class="n">✍️</span><div><h2>جمل جاهزة للامتحان</h2><div class="sub"><span class="t">Sınavda böyle yaz</span>الأسئلة تطلب «السبب» <span class="t" lang="tr">gerekçe</span>. انسخ هذه الجمل كما هي.</div></div></div>
+  <div class="phr">
+    <div><span class="tr">Paydası 0 olduğu için tanımsızdır; rasyonel sayı değildir.</span><span class="ar">لأن مقامه صفر فهو غير معرّف، وليس عدداً نسبياً.</span></div>
+    <div><span class="tr">Her tam sayı, paydası 1 olan bir rasyonel sayıdır.</span><span class="ar">كل عدد صحيح هو عدد نسبي مقامه 1.</span></div>
+    <div><span class="tr">Mutlak değer, sayının sıfıra olan uzaklığıdır.</span><span class="ar">القيمة المطلقة هي بُعد العدد عن الصفر.</span></div>
+    <div><span class="tr">En sade hâlinin paydasında yalnızca 2 ve 5 asal çarpanları var. Bu yüzden ondalık gösterimi sonludur.</span><span class="ar">في المقام 2 و 5 فقط، لذلك الكتابة العشرية منتهية.</span></div>
+    <div><span class="tr">Paydasında 2 ve 5 dışında bir asal çarpan (3, 7, 11…) var. Bu yüzden ondalık gösterimi devirlidir.</span><span class="ar">في المقام عامل أولي غير 2 و 5، لذلك هي دورية.</span></div>
+    <div><span class="tr">Sadeleştirince hepsi aynı kesir olur; aynı rasyonel sayıyı gösterirler.</span><span class="ar">بعد التبسيط كلها نفس الكسر، فهي تمثّل نفس العدد.</span></div>
+    <div><span class="tr">Negatif sayılarda mutlak değeri büyük olan sayı daha küçüktür.</span><span class="ar">في الأعداد السالبة: الأكبر قيمةً مطلقة هو الأصغر.</span></div>
+    <div><span class="tr">Paydaları eşit pozitif sayılarda payı büyük olan daha büyüktür.</span><span class="ar">نفس المقام (موجبة): البسط الأكبر هو الأكبر.</span></div>
+    <div><span class="tr">Payları eşit pozitif sayılarda paydası küçük olan daha büyüktür.</span><span class="ar">نفس البسط (موجبة): المقام الأصغر هو الأكبر.</span></div>
+    <div><span class="tr">Önce çarpma ve bölme, sonra toplama ve çıkarma yapılır. Aynı öncelikteki işlemler soldan sağa yapılır.</span><span class="ar">الضرب والقسمة أولاً ثم الجمع والطرح. المتساوية تُحسب من اليسار.</span></div>
+    <div><span class="tr">Değişim = son değer − ilk değer</span><span class="ar">التغيّر = القيمة الأخيرة − القيمة الأولى</span></div>
+    <div><span class="tr">Negatif bir sayının çift kuvveti pozitif, tek kuvveti negatiftir.</span><span class="ar">السالب بأُس زوجي موجب، وبأُس فردي سالب.</span></div>
+    <div><span class="tr">Çarpma işlemine göre tersi: pay ile payda yer değiştirir, işaret aynı kalır.</span><span class="ar">مقلوب العدد: نبدّل البسط والمقام والإشارة لا تتغيّر.</span></div>
+  </div>
+</section>
+
+<!-- ======================= GLOSSARY ======================= -->
+<section class="lesson" id="sozluk" style="--tc:var(--ink-2)">
+  <div class="lh"><span class="n">📖</span><div><h2>قاموس كلمات الامتحان</h2><div class="sub"><span class="t">Sözlük</span>الكلمات التركية التي تظهر في الأسئلة</div></div></div>
+  <ul class="gl">
+    <li><span class="t" lang="tr">Doğal sayı</span><span>عدد طبيعي</span></li>
+    <li><span class="t" lang="tr">Tam sayı</span><span>عدد صحيح</span></li>
+    <li><span class="t" lang="tr">Rasyonel sayı</span><span>عدد نسبي (كسر)</span></li>
+    <li><span class="t" lang="tr">Pozitif / Negatif</span><span>موجب / سالب</span></li>
+    <li><span class="t" lang="tr">Pay</span><span>البسط (الرقم العلوي)</span></li>
+    <li><span class="t" lang="tr">Payda</span><span>المقام (الرقم السفلي)</span></li>
+    <li><span class="t" lang="tr">Kesir</span><span>كسر</span></li>
+    <li><span class="t" lang="tr">Tam sayılı kesir</span><span>عدد كسري مثل <span class="m"><span class="mx">2<span class="fr"><span>1</span><span>4</span></span></span></span></span></li>
+    <li><span class="t" lang="tr">Bileşik kesir</span><span>كسر بسطه أكبر مثل <span class="m"><span class="fr"><span>9</span><span>4</span></span></span></span></li>
+    <li><span class="t" lang="tr">Sadeleştirmek</span><span>تبسيط (قسمة الطرفين)</span></li>
+    <li><span class="t" lang="tr">Genişletmek</span><span>توسيع (ضرب الطرفين)</span></li>
+    <li><span class="t" lang="tr">En sade hâl</span><span>أبسط صورة</span></li>
+    <li><span class="t" lang="tr">Ondalık gösterim</span><span>الكتابة العشرية</span></li>
+    <li><span class="t" lang="tr">Sonlu</span><span>منتهٍ</span></li>
+    <li><span class="t" lang="tr">Devirli</span><span>دوري (يتكرر)</span></li>
+    <li><span class="t" lang="tr">Asal çarpan</span><span>عامل أولي</span></li>
+    <li><span class="t" lang="tr">Mutlak değer</span><span>القيمة المطلقة</span></li>
+    <li><span class="t" lang="tr">Sayı doğrusu</span><span>خط الأعداد</span></li>
+    <li><span class="t" lang="tr">Ardışık</span><span>متتالي</span></li>
+    <li><span class="t" lang="tr">Arasında</span><span>بين</span></li>
+    <li><span class="t" lang="tr">Tanımsız</span><span>غير معرّف</span></li>
+    <li><span class="t" lang="tr">Karşılaştırma</span><span>مقارنة</span></li>
+    <li><span class="t" lang="tr">Sıralama</span><span>ترتيب</span></li>
+    <li><span class="t" lang="tr">Küçükten büyüğe</span><span>من الأصغر إلى الأكبر</span></li>
+    <li><span class="t" lang="tr">Büyükten küçüğe</span><span>من الأكبر إلى الأصغر</span></li>
+    <li><span class="t" lang="tr">Toplama / Çıkarma</span><span>جمع / طرح</span></li>
+    <li><span class="t" lang="tr">Çarpma / Bölme</span><span>ضرب / قسمة</span></li>
+    <li><span class="t" lang="tr">Toplam / Fark</span><span>المجموع / الفرق</span></li>
+    <li><span class="t" lang="tr">Çarpım / Bölüm</span><span>حاصل الضرب / ناتج القسمة</span></li>
+    <li><span class="t" lang="tr">Bölünen / Bölen</span><span>المقسوم / المقسوم عليه</span></li>
+    <li><span class="t" lang="tr">İşlem önceliği</span><span>ترتيب العمليات</span></li>
+    <li><span class="t" lang="tr">Üslü ifade / Kuvvet</span><span>قوة (أُس)</span></li>
+    <li><span class="t" lang="tr">Çift / Tek</span><span>زوجي / فردي</span></li>
+    <li><span class="t" lang="tr">Değişme özelliği</span><span>خاصية التبديل</span></li>
+    <li><span class="t" lang="tr">Birleşme özelliği</span><span>خاصية التجميع</span></li>
+    <li><span class="t" lang="tr">Etkisiz eleman</span><span>العنصر المحايد</span></li>
+    <li><span class="t" lang="tr">Ters eleman</span><span>المعاكس / المقلوب</span></li>
+    <li><span class="t" lang="tr">Sayı cümlesi</span><span>جملة عددية (العملية)</span></li>
+    <li><span class="t" lang="tr">Deniz seviyesi</span><span>مستوى سطح البحر</span></li>
+    <li><span class="t" lang="tr">Sıcaklık</span><span>درجة الحرارة</span></li>
+    <li><span class="t" lang="tr">Borç / Bakiye</span><span>دَين / رصيد</span></li>
+    <li><span class="t" lang="tr">Kâr / Zarar</span><span>ربح / خسارة</span></li>
+    <li><span class="t" lang="tr">Eksik / Fazla</span><span>ناقص / زائد</span></li>
+    <li><span class="t" lang="tr">En az / En fazla</span><span>أقل قيمة / أكبر قيمة</span></li>
+    <li><span class="t" lang="tr">Kaç tane</span><span>كم عدد</span></li>
+    <li><span class="t" lang="tr">Hangileri</span><span>أيّها</span></li>
+    <li><span class="t" lang="tr">Doğru / Yanlış</span><span>صحيح / خطأ</span></li>
+    <li><span class="t" lang="tr">Gerekçe</span><span>السبب (التبرير)</span></li>
+    <li><span class="t" lang="tr">Açıklayınız</span><span>اشرح</span></li>
+    <li><span class="t" lang="tr">Bulunuz / Yazınız</span><span>أوجد / اكتب</span></li>
+    <li><span class="t" lang="tr">İşlemlerinizi gösteriniz</span><span>اكتب خطوات الحل</span></li>
+    <li><span class="t" lang="tr">MÖ / MS</span><span>قبل / بعد الميلاد</span></li>
+  </ul>
+</section>
+
+<!-- ======================= CHECKLIST ======================= -->
+<section class="lesson" id="son" style="--tc:var(--ok)">
+  <div class="lh"><span class="n">✅</span><div><h2>قبل الامتحان: هل تعرف هذا؟</h2><div class="sub">ضع علامة على كل شيء تعرفه. إن لم تعرفه، ارجع إلى درسه.</div></div></div>
+  <ul class="check" id="check">
+    <li><label><input type="checkbox" data-c="1"><span>أفرّق بين الطبيعي والصحيح والنسبي، وأعرف أن المقام صفر = <span class="t" lang="tr">tanımsız</span>. (1.1)</span></label></li>
+    <li><label><input type="checkbox" data-c="2"><span>أحوّل كلمات المسألة إلى + أو − (فوق/تحت، دَين، ربح/خسارة). (1.2)</span></label></li>
+    <li><label><input type="checkbox" data-c="3"><span>القيمة المطلقة = البُعد عن الصفر، و <span class="m">|x| = 5</span> لها جوابان. (1.3)</span></label></li>
+    <li><label><input type="checkbox" data-c="4"><span>أجد بين أي عددين صحيحين يقع الكسر، وأقرأ نقطة على خط مقسّم. (1.4)</span></label></li>
+    <li><label><input type="checkbox" data-c="5"><span>أحوّل الكسر إلى عشري، وأعرف المنتهي والدوري بقاعدة 2 و 5. (2.1، 2.2)</span></label></li>
+    <li><label><input type="checkbox" data-c="6"><span>أحوّل العدد الدوري إلى كسر: <span class="m">1,2<span class="ov">3</span> = <span class="fr"><span>111</span><span>90</span></span></span>. (2.3)</span></label></li>
+    <li><label><input type="checkbox" data-c="7"><span>أرتّب الكسور، وأتذكّر أن السالب بالعكس. (3.2)</span></label></li>
+    <li><label><input type="checkbox" data-c="8"><span>أجمع وأطرح الأعداد الصحيحة، والطرح = جمع المعاكس. (4.1)</span></label></li>
+    <li><label><input type="checkbox" data-c="9"><span>إشارات الضرب والقسمة، والأُس الزوجي والفردي. (4.2)</span></label></li>
+    <li><label><input type="checkbox" data-c="10"><span>أجمع وأطرح وأضرب وأقسم الكسور. (4.3)</span></label></li>
+    <li><label><input type="checkbox" data-c="11"><span>ترتيب العمليات، ومن اليسار إلى اليمين. (4.4)</span></label></li>
+    <li><label><input type="checkbox" data-c="12"><span>أسماء الخصائص الأربع: <span class="t" lang="tr">değişme, birleşme, etkisiz, ters</span>. (4.5)</span></label></li>
+  </ul>
+  <div class="card" style="margin-top:14px">
+    <h3>📌 في ورقة الامتحان</h3>
+    <ul class="dots">
+      <li>اكتب <b>كل الخطوات</b>، لا الجواب فقط. الأستاذ يعطي درجات على الخطوات.</li>
+      <li>إذا طُلب <span class="t" lang="tr">gerekçe</span> أو <span class="t" lang="tr">açıklayınız</span> فاكتب جملة من «جمل الامتحان».</li>
+      <li>انتبه للإشارة السالبة في كل سطر.</li>
+      <li>بسّط الجواب الأخير <span class="t" lang="tr">en sade hâl</span>، واكتب الوحدة.</li>
+      <li>اقرأ <span class="t" lang="tr">en az</span> و <span class="t" lang="tr">en fazla</span> و <span class="t" lang="tr">değildir</span> جيداً، فهي تغيّر الجواب.</li>
+    </ul>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">المصادر: كتيّب الوزارة <span class="t" lang="tr">Yazılıya Hazırlanıyorum</span> وملف <span class="t" lang="tr">100 Soruda</span> · <span class="t" lang="tr">Matematik 7 · 1. Dönem 1. Yazılı</span></div>
+</footer>
+
+<script>
+(() => {
+  const $ = (s, r = document) => r.querySelector(s);
+  const $$ = (s, r = document) => [...r.querySelectorAll(s)];
+  const store = {
+    get(k) { try { return JSON.parse(localStorage.getItem(k)); } catch (e) { return null; } },
+    set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} }
+  };
+  const fr = (a, b) => `<span class="fr"><span>${a}</span><span>${b}</span></span>`;
+  const M = s => `<span class="m">${s}</span>`;
+  const sgn = n => (n < 0 ? '−' + Math.abs(n) : String(n));
+
+  // theme
+  const root = document.documentElement;
+  $('#theme').addEventListener('click', () => {
+    const dark = root.dataset.theme ? root.dataset.theme === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches;
+    root.dataset.theme = dark ? 'light' : 'dark';
+    store.set('m7-theme', root.dataset.theme);
+  });
+
+  // 1.1 number families
+  const famRows = $$('.fam-row');
+  const pressed = row => $$('button', row).filter(b => b.getAttribute('aria-pressed') === 'true').map(b => b.dataset.k).join('');
+  famRows.forEach(row => $$('button', row).forEach(b => b.addEventListener('click', () => {
+    b.setAttribute('aria-pressed', b.getAttribute('aria-pressed') === 'true' ? 'false' : 'true');
+    row.classList.remove('ok', 'no');
+  })));
+  $('#fam-check').addEventListener('click', () => {
+    let good = 0;
+    famRows.forEach(row => { const ok = pressed(row) === row.dataset.ans; row.classList.toggle('ok', ok); row.classList.toggle('no', !ok); good += ok; });
+    $('#fam-out').textContent = good === famRows.length ? `ممتاز! كلها صحيحة (${good}/${famRows.length}) 🎉` : `صحيح: ${good} من ${famRows.length}. اقرأ السبب تحت الصفوف الحمراء.`;
+  });
+  $('#fam-show').addEventListener('click', () => {
+    famRows.forEach(row => { $$('button', row).forEach(b => b.setAttribute('aria-pressed', String(row.dataset.ans.includes(b.dataset.k)))); row.classList.add('ok'); row.classList.remove('no'); });
+    $('#fam-out').textContent = 'هذه هي الإجابة الصحيحة.';
+  });
+  $('#fam-reset').addEventListener('click', () => {
+    famRows.forEach(row => { $$('button', row).forEach(b => b.setAttribute('aria-pressed', 'false')); row.classList.remove('ok', 'no'); });
+    $('#fam-out').textContent = '';
+  });
+
+  // number lines
+  const SVGNS = 'http://www.w3.org/2000/svg';
+  function ticks(g, from, to, X, y, len) {
+    for (let v = from; v <= to; v++) {
+      const l = document.createElementNS(SVGNS, 'line');
+      l.setAttribute('x1', X(v)); l.setAttribute('x2', X(v)); l.setAttribute('y1', y - len); l.setAttribute('y2', y + len); l.setAttribute('class', 'tick');
+      const t = document.createElementNS(SVGNS, 'text');
+      t.setAttribute('x', X(v)); t.setAttribute('y', y + len + 20); t.setAttribute('text-anchor', 'middle'); t.textContent = sgn(v);
+      g.append(l, t);
+    }
+  }
+  const NX = v => 40 + (v + 5) * 56;
+  ticks($('#nl-ticks'), -5, 5, NX, 60, 8);
+  ticks($('#cmp-ticks'), -4, 4, v => 60 + (v + 4) * 65, 40, 7);
+
+  function placeFraction(p, q) {
+    const v = p / q, lo = Math.floor(v), hi = lo + 1;
+    const mark = $('#nl-mark');
+    mark.style.display = '';
+    mark.setAttribute('transform', `translate(${NX(v)},0)`);
+    $('#nl-lab').textContent = `${p < 0 ? '−' : ''}${Math.abs(p)}/${q}`;
+    const seg = $('#nl-seg');
+    seg.setAttribute('x', NX(lo)); seg.setAttribute('width', NX(hi) - NX(lo));
+    const a = Math.abs(p), whole = Math.floor(a / q), rem = a % q, s = p < 0 ? '−' : '';
+    const mixed = whole ? `${s}<span class="mx">${whole}${fr(rem, q)}</span>` : `${s}${fr(rem, q)}`;
+    const head = whole ? `${M(s + fr(a, q))} = ${M(mixed)}` : M(s + fr(a, q));
+    const how = whole ? ` (${M(a + ' ÷ ' + q + ' = ' + whole)} والباقي ${M(rem)})` : ' (أصغر من واحد)';
+    $('#nl-out').innerHTML = `${head}${how}، يقع بين ${M(sgn(lo))} و ${M(sgn(hi))}.`;
+  }
+  $$('[data-nl]').forEach(b => b.addEventListener('click', () => {
+    $$('[data-nl]').forEach(x => x.setAttribute('aria-pressed', 'false'));
+    b.setAttribute('aria-pressed', 'true');
+    const [p, q] = b.dataset.nl.split('/').map(Number);
+    placeFraction(p, q);
+  }));
+
+  // 2.2 sonlu / devirli
+  const sdCards = $$('.sd-card');
+  sdCards.forEach(c => $$('button', c).forEach(b => b.addEventListener('click', () => {
+    const ok = b.dataset.pick === c.dataset.k;
+    c.classList.remove('ok', 'no'); c.classList.add(ok ? 'ok' : 'no');
+    $$('button', c).forEach(x => x.setAttribute('aria-pressed', String(x === b)));
+    const done = sdCards.filter(x => x.classList.contains('ok')).length;
+    $('#sd-out').textContent = `صحيح: ${done} من ${sdCards.length}`;
+  })));
+
+  // 3.2 compare
+  const pairs = $$('.pair');
+  pairs.forEach(p => $$('button', p).forEach(b => b.addEventListener('click', () => {
+    const ok = b.dataset.side === p.dataset.big;
+    p.classList.remove('ok', 'no'); p.classList.add(ok ? 'ok' : 'no');
+    $$('button', p).forEach(x => x.classList.toggle('win', x.dataset.side === p.dataset.big));
+    const done = pairs.filter(x => x.classList.contains('ok')).length;
+    $('#cmp-out').textContent = `صحيح: ${done} من ${pairs.length}`;
+  })));
+
+  // progress: lessons understood + checklist
+  const done = store.get('m7-done') || {};
+  $$('[data-done]').forEach(b => {
+    const k = b.dataset.done;
+    const show = v => { b.setAttribute('aria-pressed', String(!!v)); const a = $(`.top a[href="#${k}"]`); if (a) a.classList.toggle('done', !!v); };
+    show(done[k]);
+    b.addEventListener('click', () => { done[k] = !done[k]; store.set('m7-done', done); show(done[k]); });
+  });
+  const checks = store.get('m7-check') || {};
+  $$('#check input').forEach(i => {
+    i.checked = !!checks[i.dataset.c];
+    i.addEventListener('change', () => { checks[i.dataset.c] = i.checked; store.set('m7-check', checks); });
+  });
+})();
+</script>
+</body>
+</html>
