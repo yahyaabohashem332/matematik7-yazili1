@@ -214,6 +214,39 @@ details.sol>summary [lang=ar]{font-size:.98rem;line-height:1.5}
 .done-btn button[aria-pressed=true]{background:var(--tc);color:var(--on-tc)}
 .done-btn button[aria-pressed=true]::before{content:"✓"}
 
+.nlw{max-width:760px}
+.fig .tick2{stroke:var(--ink-3);stroke-width:1.25}
+.fig .arrow{fill:var(--ink-2)}
+.fig .hop{fill:none;stroke-width:2.25}
+.hop0{stroke:var(--tc)}.hop1{stroke:var(--t2)}.hopR{stroke:var(--t3)}
+svg.fig text.i{font-size:16px}
+svg.fig text.c{font-size:11px;stroke:none}
+svg.fig text.lb{font-size:13.5px}
+svg.fig text.hop0{fill:var(--tc)}svg.fig text.hop1{fill:var(--t2)}svg.fig text.hopR{fill:var(--t3)}
+svg.fig text.acc{fill:var(--tc)}svg.fig text.mk-ok,.fig circle.mk-ok{fill:var(--ok)}svg.fig text.mk-no,.fig circle.mk-no{fill:var(--red)}
+.fig .zone-n{fill:var(--red-bg)}.fig .zone-p{fill:var(--ok-bg)}
+.sth{background:color-mix(in srgb,var(--tc) 7%,var(--surface))}
+.sth>.ar{background:none}
+.blocks{display:flex;justify-content:center;flex-wrap:wrap;gap:20px}
+.blk{display:grid;justify-items:center;gap:4px;font-size:.84rem;font-weight:600}
+.blk>div{display:flex;gap:3px}
+.blk i{width:26px;height:26px;border-radius:6px;background:var(--tc)}
+.blk.r i{background:var(--t3)}
+.rd{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.rd-card{background:var(--surface);border:1.5px solid var(--line);border-radius:12px;overflow:hidden}
+.rd-card:last-child:nth-child(odd){grid-column:1/-1}
+.rd-card .fig-row{padding:8px 10px 0}
+.rd-card .bt{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;padding:6px 8px 10px}
+.rd-card .btn{font-size:1.04rem;padding:3px 12px;min-width:58px}
+.rd-card .btn.win{background:var(--ok);border-color:var(--ok);color:var(--surface)}
+.rd-card .why{display:none;font-size:.84rem;color:var(--ink-2);border-top:1px solid var(--hair)}
+.rd-card .why>.tr{padding:5px 10px;border-right-color:var(--hair)}
+.rd-card .why>.ar{padding:3px 10px;background:none}
+.rd-card.ok{border-color:var(--ok);background:var(--ok-bg)}
+.rd-card.no{border-color:var(--red);background:var(--red-bg)}
+.rd-card.ok .why,.rd-card.no .why{display:grid}
+.btn:disabled{opacity:.5;cursor:default}
+
 /* phrases, glossary, checklist */
 .phr .tr{font-weight:600}
 .gl{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px;margin:0;padding:0;list-style:none}
@@ -242,6 +275,7 @@ details.plan>summary [lang=ar]{font-size:1.05em}
 @media (max-width:860px){
   body{font-size:15px}
   .sd,.cmp{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .rd{grid-template-columns:minmax(0,1fr)}
   .gl{grid-template-columns:1fr}
   .hero-in>div{padding:4px 20px}
 }
@@ -511,51 +545,100 @@ details.plan>summary [lang=ar]{font-size:1.05em}
 
   <div class="card">
     <header class="hh"><h3 lang="tr" dir="ltr">Sayı doğrusunda rasyonel sayılar</h3><span class="k">1.4</span><h3 lang="ar" dir="rtl">العدد النسبي على خط الأعداد</h3></header>
-    <div class="rule">
-      <div class="bi lab"><div class="tr" lang="tr" dir="ltr">Kesir hangi iki tam sayı arasında?</div><div class="ar" lang="ar" dir="rtl">بين أي عددين صحيحين يقع الكسر؟</div></div>
-      <div class="bi st"><div class="tr" lang="tr" dir="ltr">Kesri tam sayılı kesre çevir: payı paydaya böl. <span class="m">11 ÷ 6 = 1</span>, kalan <span class="m">5</span>; yani <span class="m"><span class="fr"><span>11</span><span>6</span></span> = <span class="mx">1<span class="fr"><span>5</span><span>6</span></span></span></span>.</div><div class="ar" lang="ar" dir="rtl">حوّل الكسر إلى عدد كسري: اقسم البسط على المقام. <span class="m">11 ÷ 6 = 1</span> والباقي <span class="m">5</span>، إذن <span class="m"><span class="fr"><span>11</span><span>6</span></span> = <span class="mx">1<span class="fr"><span>5</span><span>6</span></span></span></span>.</div></div>
-      <div class="bi st"><div class="tr" lang="tr" dir="ltr">Pozitif <span class="m"><span class="mx">1<span class="fr"><span>5</span><span>6</span></span></span></span>, <span class="m">1</span> ile <span class="m">2</span> arasındadır.</div><div class="ar" lang="ar" dir="rtl">الموجب <span class="m"><span class="mx">1<span class="fr"><span>5</span><span>6</span></span></span></span> يقع بين <span class="m">1</span> و <span class="m">2</span>.</div></div>
-      <div class="bi st"><div class="tr" lang="tr" dir="ltr">Negatif <span class="m">−<span class="mx">1<span class="fr"><span>5</span><span>6</span></span></span></span>, <span class="m">−2</span> ile <span class="m">−1</span> arasındadır.</div><div class="ar" lang="ar" dir="rtl">السالب <span class="m">−<span class="mx">1<span class="fr"><span>5</span><span>6</span></span></span></span> يقع بين <span class="m">−2</span> و <span class="m">−1</span>.</div></div>
-    </div>
-    <div class="tool">
-      <div class="bi lab"><div class="tr" lang="tr" dir="ltr">Bir kesir seç, sayı doğrusundaki yerini gör.</div><div class="ar" lang="ar" dir="rtl">اختر كسراً لترى مكانه على خط الأعداد.</div></div>
-      <div class="tool-b">
-        <div class="picks">
-          <button class="btn" type="button" data-nl="-11/6">−<span class="fr"><span>11</span><span>6</span></span></button>
-          <button class="btn" type="button" data-nl="7/3"><span class="fr"><span>7</span><span>3</span></span></button>
-          <button class="btn" type="button" data-nl="-3/5">−<span class="fr"><span>3</span><span>5</span></span></button>
-          <button class="btn" type="button" data-nl="-17/4">−<span class="fr"><span>17</span><span>4</span></span></button>
-          <button class="btn" type="button" data-nl="9/4"><span class="fr"><span>9</span><span>4</span></span></button>
-          <button class="btn" type="button" data-nl="-7/4">−<span class="fr"><span>7</span><span>4</span></span></button>
-          <button class="btn" type="button" data-nl="21/5"><span class="fr"><span>21</span><span>5</span></span></button>
-          <button class="btn" type="button" data-nl="-10/3">−<span class="fr"><span>10</span><span>3</span></span></button>
-        </div>
-        <svg class="fig" id="nl" viewBox="0 0 640 100" role="img" aria-label="Sayı doğrusu · خط الأعداد: −5 … 5">
-          <rect id="nl-seg" x="0" y="55" width="0" height="10" rx="5" class="acc" opacity=".35"/>
-          <line class="axis" x1="20" y1="60" x2="620" y2="60"/>
-          <g id="nl-ticks"></g>
-          <g id="nl-mark" style="display:none"><line x1="0" y1="34" x2="0" y2="60" class="accs" stroke-width="2"/><circle cx="0" cy="60" r="8" class="acc"/><text id="nl-lab" x="0" y="26" text-anchor="middle" class="acc"></text></g>
-        </svg>
-        <div class="out" id="nl-out" aria-live="polite"></div>
+    <div class="bi"><div class="tr" lang="tr" dir="ltr">Sayı doğrusunu düz bir yol gibi düşün. Kesir, bu yolda nereye kadar yürüyeceğini söyler. 4 adımda öğrenelim.</div><div class="ar" lang="ar" dir="rtl">تخيّل خط الأعداد طريقاً مستقيماً. الكسر يخبرك إلى أين تمشي على هذا الطريق. لنتعلّمه في 4 خطوات.</div></div>
+
+    <div class="bi lab sth"><div class="tr" lang="tr" dir="ltr">1. adım: Yol</div><div class="ar" lang="ar" dir="rtl">الخطوة 1: الطريق</div></div>
+    <div class="bi"><div class="tr" lang="tr" dir="ltr">0 başlangıç noktasıdır. Pozitif sayılar <b>sağda</b>, negatif sayılar <b>soldadır</b>. İki ardışık tam sayının arası <b>1 birimdir</b>.</div><div class="ar" lang="ar" dir="rtl">الصفر هو نقطة البداية. الأعداد الموجبة على <b>اليمين</b> والسالبة على <b>اليسار</b>، حتى في الكتب العربية. والمسافة بين عددين صحيحين متتاليين هي <b>وحدة واحدة</b>.</div></div>
+    <div class="fig-row"><svg class="fig nlw" data-a="-3" data-b="3" data-n="1" data-road="1" role="img" aria-label="Sayı doğrusu: solda negatif, sağda pozitif · خط الأعداد: السالب يساراً والموجب يميناً"></svg></div>
+
+    <div class="bi lab sth"><div class="tr" lang="tr" dir="ltr">2. adım: Kesir ne söyler?</div><div class="ar" lang="ar" dir="rtl">الخطوة 2: ماذا يقول الكسر؟</div></div>
+    <div class="bi"><div class="tr" lang="tr" dir="ltr"><b>Payda</b> (alttaki sayı): her birimi kaç eş parçaya böleceğimizi söyler.</div><div class="ar" lang="ar" dir="rtl"><b>المقام</b> (الرقم السفلي): إلى كم جزءاً متساوياً نقسم كل وحدة.</div></div>
+    <div class="bi"><div class="tr" lang="tr" dir="ltr"><b>Pay</b> (üstteki sayı): kaç parça yürüyeceğimizi söyler.</div><div class="ar" lang="ar" dir="rtl"><b>البسط</b> (الرقم العلوي): كم جزءاً نمشي.</div></div>
+    <div class="bi"><div class="tr" lang="tr" dir="ltr"><b>Örnek <span class="m"><span class="fr"><span>3</span><span>4</span></span></span>:</b> 0 ile 1 arasını 4 parçaya böl, 3 parça sağa yürü.</div><div class="ar" lang="ar" dir="rtl"><b>مثال <span class="m"><span class="fr"><span>3</span><span>4</span></span></span>:</b> اقسم ما بين 0 و 1 إلى 4 أجزاء، وامشِ 3 أجزاء إلى اليمين.</div></div>
+    <div class="fig-row"><svg class="fig nlw" data-a="0" data-b="1" data-n="4" data-hops="3" role="img" aria-label="0’dan 3/4’e 3 parça · من 0 إلى 3/4 ثلاثة أجزاء"></svg></div>
+
+    <div class="bi lab sth"><div class="tr" lang="tr" dir="ltr">3. adım: Pay, paydadan büyükse</div><div class="ar" lang="ar" dir="rtl">الخطوة 3: إذا كان البسط أكبر من المقام</div></div>
+    <div class="bi"><div class="tr" lang="tr" dir="ltr"><b>Örnek <span class="m"><span class="fr"><span>7</span><span>4</span></span></span>:</b> 7 parça yürüyeceğiz. <b>4 parça, 1 tam eder.</b> Geriye 3 parça kalır.</div><div class="ar" lang="ar" dir="rtl"><b>مثال <span class="m"><span class="fr"><span>7</span><span>4</span></span></span>:</b> سنمشي 7 أجزاء. <b>كل 4 أجزاء تساوي وحدة كاملة.</b> ويبقى 3 أجزاء.</div></div>
+    <div class="fig-row">
+      <div class="blocks">
+        <div class="blk"><div><i></i><i></i><i></i><i></i></div><span class="pr"><span lang="tr">1 tam</span><span lang="ar" dir="rtl">وحدة كاملة</span></span></div>
+        <div class="blk r"><div><i></i><i></i><i></i></div><span class="pr"><span lang="tr">3 parça</span><span lang="ar" dir="rtl">3 أجزاء</span></span></div>
       </div>
     </div>
-    <div class="bi"><div class="tr" lang="tr" dir="ltr"><b>Parçalara bölünmüş doğruda:</b> iki tam sayı arasındaki parçaları say. <span class="m">−2</span> ile <span class="m">−1</span> arası 4 parçaysa her parça <span class="m"><span class="fr"><span>1</span><span>4</span></span></span> birimdir.</div><div class="ar" lang="ar" dir="rtl"><b>الخط المقسّم إلى أجزاء:</b> عُدّ الأجزاء بين العددين الصحيحين. إذا كان بين <span class="m">−2</span> و <span class="m">−1</span> أربعة أجزاء فكل جزء <span class="m"><span class="fr"><span>1</span><span>4</span></span></span> وحدة.</div></div>
+    <div class="fig-row"><svg class="fig nlw" data-a="0" data-b="2" data-n="4" data-hops="7" role="img" aria-label="0’dan 7/4’e 7 parça, 1 ile 2 arasında · من 0 إلى 7/4 سبعة أجزاء، بين 1 و 2"></svg></div>
+    <div class="bi"><div class="tr" lang="tr" dir="ltr">Hesapla: 7’nin içinde 4 kaç kere var? 1 kere, 3 artar. Yani 1 tam ve 3 parça:</div><div class="ar" lang="ar" dir="rtl">بالحساب: كم مرة يدخل 4 في 7؟ مرة واحدة ويبقى 3. أي وحدة كاملة و3 أجزاء:</div></div>
+    <div class="eq"None><span class="eqi"><span class="fr"><span>7</span><span>4</span></span> = <span class="mx">1<span class="fr"><span>3</span><span>4</span></span></span></span></div>
+
+    <div class="bi lab sth"><div class="tr" lang="tr" dir="ltr">4. adım: Negatif kesir: aynı yürüyüş, ters yön</div><div class="ar" lang="ar" dir="rtl">الخطوة 4: الكسر السالب: نفس المشي بالاتجاه المعاكس</div></div>
+    <div class="bi"><div class="tr" lang="tr" dir="ltr"><b>Örnek <span class="m">−<span class="fr"><span>7</span><span>4</span></span></span>:</b> yine 7 parça yürüyoruz, ama bu kez <b>sola</b>.</div><div class="ar" lang="ar" dir="rtl"><b>مثال <span class="m">−<span class="fr"><span>7</span><span>4</span></span></span>:</b> نمشي أيضاً 7 أجزاء، لكن هذه المرة إلى <b>اليسار</b>.</div></div>
+    <div class="fig-row"><svg class="fig nlw" data-a="-2" data-b="0" data-n="4" data-hops="7" data-dir="-1" role="img" aria-label="0’dan −7/4’e sola 7 parça, −2 ile −1 arasında · من 0 إلى −7/4 سبعة أجزاء يساراً، بين −2 و −1"></svg></div>
+    <div class="eq"None><span class="eqi">−<span class="fr"><span>7</span><span>4</span></span> = −<span class="mx">1<span class="fr"><span>3</span><span>4</span></span></span></span></div>
+
+    <div class="rule">
+      <div class="bi lab"><div class="tr" lang="tr" dir="ltr">Hangi iki tam sayı arasında? Tek kural</div><div class="ar" lang="ar" dir="rtl">بين أي عددين صحيحين؟ قاعدة واحدة</div></div>
+      <div class="bi st"><div class="tr" lang="tr" dir="ltr">Kesri tam sayılı yaz: <span class="m"><span class="fr"><span>7</span><span>4</span></span> = <span class="mx">1<span class="fr"><span>3</span><span>4</span></span></span></span>.</div><div class="ar" lang="ar" dir="rtl">اكتب الكسر عدداً كسرياً: <span class="m"><span class="fr"><span>7</span><span>4</span></span> = <span class="mx">1<span class="fr"><span>3</span><span>4</span></span></span></span>.</div></div>
+      <div class="bi st"><div class="tr" lang="tr" dir="ltr">Yazılı olan tam sayı, <b>sıfıra yakın</b> olandır.</div><div class="ar" lang="ar" dir="rtl">العدد الصحيح المكتوب هو <b>الأقرب إلى الصفر</b>.</div></div>
+      <div class="bi st"><div class="tr" lang="tr" dir="ltr">Diğer tam sayı, sıfırdan <b>bir birim daha uzaktır</b>.</div><div class="ar" lang="ar" dir="rtl">والعدد الآخر <b>أبعد منه بوحدة</b> عن الصفر.</div></div>
+      <div class="eq"None><span class="eqi">1 &lt; <span class="mx">1<span class="fr"><span>3</span><span>4</span></span></span> &lt; 2</span><span class="eqi">−2 &lt; −<span class="mx">1<span class="fr"><span>3</span><span>4</span></span></span> &lt; −1</span></div>
+    </div>
+
+    <div class="tool">
+      <div class="bi lab"><div class="tr" lang="tr" dir="ltr">Kesirle yürü: bir kesir seç, parça parça yürü.</div><div class="ar" lang="ar" dir="rtl">امشِ مع الكسر: اختر كسراً وامشِ جزءاً جزءاً.</div></div>
+      <div class="tool-b">
+        <div class="picks">
+          <button class="btn" type="button" data-w="3/4"><span class="fr"><span>3</span><span>4</span></span></button>
+          <button class="btn" type="button" data-w="7/4"><span class="fr"><span>7</span><span>4</span></span></button>
+          <button class="btn" type="button" data-w="-7/4">−<span class="fr"><span>7</span><span>4</span></span></button>
+          <button class="btn" type="button" data-w="-3/5">−<span class="fr"><span>3</span><span>5</span></span></button>
+          <button class="btn" type="button" data-w="7/3"><span class="fr"><span>7</span><span>3</span></span></button>
+          <button class="btn" type="button" data-w="-11/6">−<span class="fr"><span>11</span><span>6</span></span></button>
+          <button class="btn" type="button" data-w="9/4"><span class="fr"><span>9</span><span>4</span></span></button>
+          <button class="btn" type="button" data-w="-10/3">−<span class="fr"><span>10</span><span>3</span></span></button>
+        </div>
+        <svg class="fig nlw" id="walk" role="img" aria-label="Kesrin sayı doğrusundaki yürüyüşü · المشي مع الكسر على خط الأعداد"></svg>
+        <div class="row-btns"><button class="btn pri" type="button" id="w-step">Bir parça yürü · امشِ جزءاً</button><button class="btn" type="button" id="w-all">Hepsini göster · اعرض الكل</button><button class="btn" type="button" id="w-reset">Baştan · من جديد</button></div>
+        <div class="out" id="w-out" aria-live="polite"></div>
+      </div>
+    </div>
+
+    <div class="rule">
+      <div class="bi lab"><div class="tr" lang="tr" dir="ltr">Doğrudaki noktayı okumak: 3 soru</div><div class="ar" lang="ar" dir="rtl">قراءة نقطة على الخط: 3 أسئلة</div></div>
+      <div class="bi st"><div class="tr" lang="tr" dir="ltr">Nokta hangi iki tam sayı arasında?</div><div class="ar" lang="ar" dir="rtl">بين أي عددين صحيحين تقع النقطة؟</div></div>
+      <div class="bi st"><div class="tr" lang="tr" dir="ltr">Aralarında kaç parça var? Bu sayı <b>paydadır</b>.</div><div class="ar" lang="ar" dir="rtl">كم جزءاً بينهما؟ هذا العدد هو <b>المقام</b>.</div></div>
+      <div class="bi st"><div class="tr" lang="tr" dir="ltr"><b>Sıfıra yakın</b> tam sayıdan noktaya kaç parça var? Bu sayı <b>paydır</b>.</div><div class="ar" lang="ar" dir="rtl">كم جزءاً من العدد الصحيح <b>الأقرب إلى الصفر</b> إلى النقطة؟ هذا العدد هو <b>البسط</b>.</div></div>
+    </div>
+
+    <div class="trap">
+      <div class="bi lab"><div class="tr" lang="tr" dir="ltr">Dikkat: sık yapılan iki hata</div><div class="ar" lang="ar" dir="rtl">انتبه: خطآن شائعان</div></div>
+      <div class="bi li"><div class="tr" lang="tr" dir="ltr"><b>Parçaları say, çizgileri değil.</b> Ortada 3 çizgi varsa 4 parça vardır.</div><div class="ar" lang="ar" dir="rtl"><b>عُدّ الأجزاء لا الخطوط.</b> إذا كان في الوسط 3 خطوط فهناك 4 أجزاء.</div></div>
+      <div class="bi li"><div class="tr" lang="tr" dir="ltr"><b>Noktaya yakın sayıdan değil, sıfıra yakın sayıdan say.</b> A, <span class="m">−2</span>’ye yakın diye <span class="m">−<span class="mx">2<span class="fr"><span>1</span><span>4</span></span></span></span> yazılmaz: <span class="m">−<span class="mx">2<span class="fr"><span>1</span><span>4</span></span></span></span>, <span class="m">−2</span>’nin <b>solundadır</b>. A ise sağındadır ve <span class="m">−<span class="mx">1<span class="fr"><span>3</span><span>4</span></span></span></span>’tür.</div><div class="ar" lang="ar" dir="rtl"><b>عُدّ من العدد الأقرب إلى الصفر، لا من العدد القريب من النقطة.</b> لا نكتب <span class="m">−<span class="mx">2<span class="fr"><span>1</span><span>4</span></span></span></span> لأن A قريبة من <span class="m">−2</span>: فالعدد <span class="m">−<span class="mx">2<span class="fr"><span>1</span><span>4</span></span></span></span> يقع <b>يسار</b> <span class="m">−2</span>، أما A فتقع يمينه وهي <span class="m">−<span class="mx">1<span class="fr"><span>3</span><span>4</span></span></span></span>.</div></div>
+      <div class="fig-row"><svg class="fig nlw" data-a="-3" data-b="-1" data-n="4" data-marks="-1.75|A = −1 3/4|ok;-2.25|−2 1/4|no" role="img" aria-label="A = −1 3/4, −2’nin sağında; −2 1/4, −2’nin solunda · A = −1 3/4 يمين −2، و −2 1/4 يسار −2"></svg></div>
+    </div>
+
+    <div class="tool">
+      <div class="bi lab"><div class="tr" lang="tr" dir="ltr">Kendin dene: noktayı oku. (3 soruyu kullan.)</div><div class="ar" lang="ar" dir="rtl">جرّب بنفسك: اقرأ النقطة. (استعمل الأسئلة الثلاثة.)</div></div>
+      <div class="tool-b">
+        <div class="rd">
+          <div class="rd-card"><div class="fig-row"><svg class="fig nlw" data-a="0" data-b="1" data-n="5" data-marks="0.6|?|acc" role="img" aria-label="0 ile 1 arası 5 parça · بين 0 و 1 خمسة أجزاء"></svg></div><div class="bt"><button class="btn" type="button"><span class="fr"><span>5</span><span>3</span></span></button><button class="btn" type="button" data-right="1"><span class="fr"><span>3</span><span>5</span></span></button><button class="btn" type="button"><span class="fr"><span>2</span><span>5</span></span></button></div><div class="bi why"><div class="tr" lang="tr" dir="ltr">0 ile 1 arası 5 parça: payda 5. 0’dan noktaya 3 parça: pay 3.</div><div class="ar" lang="ar" dir="rtl">بين 0 و 1 خمسة أجزاء: المقام 5. من 0 إلى النقطة 3 أجزاء: البسط 3.</div></div></div>
+          <div class="rd-card"><div class="fig-row"><svg class="fig nlw" data-a="1" data-b="2" data-n="4" data-marks="1.25|?|acc" role="img" aria-label="1 ile 2 arası 4 parça · بين 1 و 2 أربعة أجزاء"></svg></div><div class="bt"><button class="btn" type="button" data-right="1"><span class="mx">1<span class="fr"><span>1</span><span>4</span></span></span></button><button class="btn" type="button"><span class="fr"><span>1</span><span>4</span></span></button><button class="btn" type="button"><span class="mx">2<span class="fr"><span>1</span><span>4</span></span></span></button></div><div class="bi why"><div class="tr" lang="tr" dir="ltr">1 ile 2 arasında, 4 parça. 1’den noktaya 1 parça: <span class="m"><span class="mx">1<span class="fr"><span>1</span><span>4</span></span></span></span>.</div><div class="ar" lang="ar" dir="rtl">بين 1 و 2، أربعة أجزاء. من 1 إلى النقطة جزء واحد: <span class="m"><span class="mx">1<span class="fr"><span>1</span><span>4</span></span></span></span>.</div></div></div>
+          <div class="rd-card"><div class="fig-row"><svg class="fig nlw" data-a="-1" data-b="0" data-n="3" data-marks="-0.6667|?|acc" role="img" aria-label="−1 ile 0 arası 3 parça · بين −1 و 0 ثلاثة أجزاء"></svg></div><div class="bt"><button class="btn" type="button">−<span class="fr"><span>1</span><span>3</span></span></button><button class="btn" type="button"><span class="fr"><span>2</span><span>3</span></span></button><button class="btn" type="button" data-right="1">−<span class="fr"><span>2</span><span>3</span></span></button></div><div class="bi why"><div class="tr" lang="tr" dir="ltr">−1 ile 0 arasında, 3 parça. Sıfıra yakın olan 0. 0’dan noktaya sola 2 parça: <span class="m">−<span class="fr"><span>2</span><span>3</span></span></span>.</div><div class="ar" lang="ar" dir="rtl">بين <span class="m">−1</span> و 0، ثلاثة أجزاء. الأقرب إلى الصفر هو 0. من 0 إلى النقطة جزءان يساراً: <span class="m">−<span class="fr"><span>2</span><span>3</span></span></span>.</div></div></div>
+          <div class="rd-card"><div class="fig-row"><svg class="fig nlw" data-a="-2" data-b="-1" data-n="4" data-marks="-1.75|?|acc" role="img" aria-label="−2 ile −1 arası 4 parça · بين −2 و −1 أربعة أجزاء"></svg></div><div class="bt"><button class="btn" type="button">−<span class="mx">2<span class="fr"><span>1</span><span>4</span></span></span></button><button class="btn" type="button" data-right="1">−<span class="mx">1<span class="fr"><span>3</span><span>4</span></span></span></button><button class="btn" type="button">−<span class="mx">1<span class="fr"><span>1</span><span>4</span></span></span></button></div><div class="bi why"><div class="tr" lang="tr" dir="ltr">−2 ile −1 arasında, 4 parça. Sıfıra yakın olan −1. −1’den noktaya sola 3 parça: <span class="m">−<span class="mx">1<span class="fr"><span>3</span><span>4</span></span></span></span>.</div><div class="ar" lang="ar" dir="rtl">بين <span class="m">−2</span> و <span class="m">−1</span>، أربعة أجزاء. الأقرب إلى الصفر هو <span class="m">−1</span>. منه إلى النقطة 3 أجزاء يساراً: <span class="m">−<span class="mx">1<span class="fr"><span>3</span><span>4</span></span></span></span>.</div></div></div>
+          <div class="rd-card"><div class="fig-row"><svg class="fig nlw" data-a="-3" data-b="-2" data-n="5" data-marks="-2.4|?|acc" role="img" aria-label="−3 ile −2 arası 5 parça · بين −3 و −2 خمسة أجزاء"></svg></div><div class="bt"><button class="btn" type="button" data-right="1">−<span class="mx">2<span class="fr"><span>2</span><span>5</span></span></span></button><button class="btn" type="button">−<span class="mx">3<span class="fr"><span>2</span><span>5</span></span></span></button><button class="btn" type="button">−<span class="mx">2<span class="fr"><span>3</span><span>5</span></span></span></button></div><div class="bi why"><div class="tr" lang="tr" dir="ltr">−3 ile −2 arasında, 5 parça. Sıfıra yakın olan −2. −2’den noktaya sola 2 parça: <span class="m">−<span class="mx">2<span class="fr"><span>2</span><span>5</span></span></span></span>.</div><div class="ar" lang="ar" dir="rtl">بين <span class="m">−3</span> و <span class="m">−2</span>، خمسة أجزاء. الأقرب إلى الصفر هو <span class="m">−2</span>. منه إلى النقطة جزءان يساراً: <span class="m">−<span class="mx">2<span class="fr"><span>2</span><span>5</span></span></span></span>.</div></div></div>
+        </div>
+        <div class="out" id="rd-out" aria-live="polite"></div>
+      </div>
+    </div>
 
     <div class="ob">
       <div class="obh"><span lang="tr" dir="ltr">A noktası kaçtır?</span><span class="badge">MEB · 8</span><span lang="ar" dir="rtl">ما العدد عند النقطة A؟</span></div>
       <div class="bi q"><div class="tr" lang="tr" dir="ltr">Sayı doğrusunda –2 ile –1 arası dört eş parçaya bölünmüştür.</div><div class="ar" lang="ar" dir="rtl">على خط الأعداد قُسّم ما بين <span class="m">−2</span> و <span class="m">−1</span> إلى أربعة أجزاء متساوية.</div></div>
-      <div class="fig-row">
-        <svg class="fig" style="max-width:440px" viewBox="0 0 520 70" role="img" aria-label="–2 ile –1 arası dört parça; A, –2’den sonraki ilk çizgide">
-          <line class="axis" x1="20" y1="35" x2="500" y2="35"/>
-          <line class="tick" x1="60" y1="25" x2="60" y2="45"/><line class="tick" x1="160" y1="28" x2="160" y2="42"/><line class="tick" x1="260" y1="28" x2="260" y2="42"/><line class="tick" x1="360" y1="28" x2="360" y2="42"/><line class="tick" x1="460" y1="25" x2="460" y2="45"/>
-          <text x="60" y="65" text-anchor="middle">–2</text><text x="460" y="65" text-anchor="middle">–1</text>
-          <circle cx="160" cy="35" r="6" class="acc"/><text x="160" y="18" text-anchor="middle" class="acc">A</text>
-        </svg>
-      </div>
+      <div class="fig-row"><svg class="fig nlw" data-a="-2" data-b="-1" data-n="4" data-marks="-1.75|A|acc" role="img" aria-label="–2 ile –1 arası dört parça; A, –2’den sonraki ilk çizgide · بين −2 و −1 أربعة أجزاء، و A عند أول خط بعد −2"></svg></div>
       <div class="bi q"><div class="tr" lang="tr" dir="ltr">Öğrencilerin cevapları: Kerem <span class="m">−<span class="mx">1<span class="fr"><span>3</span><span>4</span></span></span></span>, Zeynep <span class="m">−<span class="fr"><span>14</span><span>8</span></span></span>, Arda <span class="m">−<span class="fr"><span>21</span><span>12</span></span></span>.</div><div class="ar" lang="ar" dir="rtl">إجابات الطلاب: <span class="t" lang="tr">Kerem</span> <span class="m">−<span class="mx">1<span class="fr"><span>3</span><span>4</span></span></span></span>، <span class="t" lang="tr">Zeynep</span> <span class="m">−<span class="fr"><span>14</span><span>8</span></span></span>، <span class="t" lang="tr">Arda</span> <span class="m">−<span class="fr"><span>21</span><span>12</span></span></span>.</div></div>
       <div class="bi q ask"><div class="tr" lang="tr" dir="ltr">Bu öğrencilerden hangisi ya da hangileri doğru cevap vermiştir? Gerekçesiyle açıklayınız.</div><div class="ar" lang="ar" dir="rtl">أي الطلاب إجابته صحيحة؟ اشرح السبب.</div></div>
       <details class="sol"><summary><span lang="tr">Çözümü göster</span><i aria-hidden="true"></i><span lang="ar" dir="rtl">اعرض الحل</span></summary><div class="sol-b">
-        <div class="bi st"><div class="tr" lang="tr" dir="ltr">Her parça <span class="m"><span class="fr"><span>1</span><span>4</span></span></span>. A, <span class="m">−1</span>’in 3 parça solundadır: <span class="m">−<span class="mx">1<span class="fr"><span>3</span><span>4</span></span></span> = −<span class="fr"><span>7</span><span>4</span></span></span>.</div><div class="ar" lang="ar" dir="rtl">كل جزء <span class="m"><span class="fr"><span>1</span><span>4</span></span></span>. النقطة A تبعد عن <span class="m">−1</span> ثلاثة أجزاء نحو اليسار: <span class="m">−<span class="mx">1<span class="fr"><span>3</span><span>4</span></span></span> = −<span class="fr"><span>7</span><span>4</span></span></span>.</div></div>
+        <div class="bi st"><div class="tr" lang="tr" dir="ltr">Nokta <span class="m">−2</span> ile <span class="m">−1</span> arasındadır.</div><div class="ar" lang="ar" dir="rtl">النقطة بين <span class="m">−2</span> و <span class="m">−1</span>.</div></div>
+        <div class="bi st"><div class="tr" lang="tr" dir="ltr">Aralarında 4 parça var: payda 4.</div><div class="ar" lang="ar" dir="rtl">بينهما 4 أجزاء: المقام 4.</div></div>
+        <div class="bi st"><div class="tr" lang="tr" dir="ltr">Sıfıra yakın olan <span class="m">−1</span>. <span class="m">−1</span>’den A’ya sola 3 parça: <span class="m">−<span class="mx">1<span class="fr"><span>3</span><span>4</span></span></span> = −<span class="fr"><span>7</span><span>4</span></span></span>. Kerem doğrudur.</div><div class="ar" lang="ar" dir="rtl">الأقرب إلى الصفر هو <span class="m">−1</span>. منه إلى A ثلاثة أجزاء يساراً: <span class="m">−<span class="mx">1<span class="fr"><span>3</span><span>4</span></span></span> = −<span class="fr"><span>7</span><span>4</span></span></span>. <span class="t" lang="tr">Kerem</span> على حق.</div></div>
         <div class="bi st"><div class="tr" lang="tr" dir="ltr">Zeynep: <span class="m">−<span class="fr"><span>14</span><span>8</span></span></span>, 2 ile sadeleşir: <span class="m">−<span class="fr"><span>7</span><span>4</span></span></span>.</div><div class="ar" lang="ar" dir="rtl"><span class="t" lang="tr">Zeynep</span>: <span class="m">−<span class="fr"><span>14</span><span>8</span></span></span> نبسّطه على 2: <span class="m">−<span class="fr"><span>7</span><span>4</span></span></span>.</div></div>
         <div class="bi st"><div class="tr" lang="tr" dir="ltr">Arda: <span class="m">−<span class="fr"><span>21</span><span>12</span></span></span>, 3 ile sadeleşir: <span class="m">−<span class="fr"><span>7</span><span>4</span></span></span>.</div><div class="ar" lang="ar" dir="rtl"><span class="t" lang="tr">Arda</span>: <span class="m">−<span class="fr"><span>21</span><span>12</span></span></span> نبسّطه على 3: <span class="m">−<span class="fr"><span>7</span><span>4</span></span></span>.</div></div>
         <div class="bi ans"><div class="tr" lang="tr" dir="ltr"><span class="al">Cevap</span>Üçü de doğrudur. Sadeleştirince hepsi <span class="m">−<span class="fr"><span>7</span><span>4</span></span></span> olur; aynı rasyonel sayıyı gösterirler.</div><div class="ar" lang="ar" dir="rtl"><span class="al">الجواب</span>الثلاثة صحيحون. بعد التبسيط كلها <span class="m">−<span class="fr"><span>7</span><span>4</span></span></span>، فهي نفس العدد.</div></div>
@@ -1192,37 +1275,104 @@ details.plan>summary [lang=ar]{font-size:1.05em}
       g.append(l, t);
     }
   }
-  const NX = v => 40 + (v + 5) * 56;
-  ticks($('#nl-ticks'), -5, 5, NX, 60, 8);
   ticks($('#cmp-ticks'), -4, 4, v => 60 + (v + 4) * 65, 30, 7);
-  $('#nl-out').innerHTML = BI('Bir kesre dokun.', 'اضغط على أحد الكسور.');
 
-  function placeFraction(p, q) {
-    const v = p / q, lo = Math.floor(v), hi = lo + 1;
-    const mark = $('#nl-mark');
-    mark.style.display = '';
-    mark.setAttribute('transform', `translate(${NX(v)},0)`);
-    $('#nl-lab').textContent = `${p < 0 ? '−' : ''}${Math.abs(p)}/${q}`;
-    const seg = $('#nl-seg');
-    seg.setAttribute('x', NX(lo)); seg.setAttribute('width', NX(hi) - NX(lo));
-    const a = Math.abs(p), whole = Math.floor(a / q), rem = a % q, s = p < 0 ? '−' : '';
-    const head = whole ? M(`${s}${fr(a, q)} = ${s}<span class="mx">${whole}${fr(rem, q)}</span>`) : M(s + fr(a, q));
-    const div = whole ? M(`${a} ÷ ${q} = ${whole}`) : '';
-    $('#nl-out').innerHTML = BI(
-      `${head}${whole ? ` (${div}, kalan ${M(rem)})` : ''}: ${M(sgn(lo))} ile ${M(sgn(hi))} arasındadır.`,
-      `${head}${whole ? ` (${div} والباقي ${M(rem)})` : ''}: يقع بين ${M(sgn(lo))} و ${M(sgn(hi))}.`);
+  // 1.4 number lines: drawn at real pixel width so the labels stay readable on a phone
+  const lines = new WeakMap();
+  const node = (name, attrs, text) => {
+    const e = document.createElementNS(SVGNS, name);
+    for (const k in attrs) e.setAttribute(k, attrs[k]);
+    if (text != null) e.textContent = text;
+    return e;
+  };
+  function drawLine(svg) {
+    const o = lines.get(svg), W = Math.round(svg.getBoundingClientRect().width);
+    if (!o || !W) return;
+    const { a, b, n, hops = 0, parts = hops, dir = 1, marks = [], road, dot } = o;
+    const m = 26, base = road ? 44 : hops || marks.length ? 76 : 30, H = base + 34;
+    const total = (b - a) * n, gap = (W - 2 * m) / total;
+    const X = v => m + (v - a) * (W - 2 * m) / (b - a);
+    svg.setAttribute('viewBox', `0 0 ${W} ${H}`);
+    svg.replaceChildren();
+    if (road) {
+      svg.append(node('rect', { x: X(a) - 12, y: 8, width: X(0) - X(a) + 12, height: base - 8, class: 'zone-n' }), node('rect', { x: X(0), y: 8, width: X(b) - X(0) + 12, height: base - 8, class: 'zone-p' }));
+      svg.append(node('text', { x: (X(a) + X(0)) / 2, y: 27, 'text-anchor': 'middle', class: 'lb' }, '− Negatif · سالب'), node('text', { x: (X(0) + X(b)) / 2, y: 27, 'text-anchor': 'middle', class: 'lb' }, '+ Pozitif · موجب'));
+    }
+    svg.append(node('line', { x1: 8, y1: base, x2: W - 8, y2: base, class: 'axis' }));
+    svg.append(node('path', { d: `M4 ${base}l9 -5v10z`, class: 'arrow' }), node('path', { d: `M${W - 4} ${base}l-9 -5v10z`, class: 'arrow' }));
+    for (let i = 0; i <= total; i++) {
+      const v = a + i / n, whole = i % n === 0, x = X(v), len = whole ? 9 : 5;
+      svg.append(node('line', { x1: x, x2: x, y1: base - len, y2: base + len, class: whole ? 'tick' : 'tick2' }));
+      if (whole) svg.append(node('text', { x, y: base + 28, 'text-anchor': 'middle', class: 'i' }, sgn(Math.round(v))));
+    }
+    // complete units alternate two colours, the remainder gets a third, like the blocks in step 3
+    const fullHops = Math.floor(parts / n) * n, rise = Math.min(30, Math.max(12, gap * .75));
+    for (let i = 1; i <= hops; i++) {
+      const x0 = X(dir * (i - 1) / n), x1 = X(dir * i / n), mid = (x0 + x1) / 2;
+      const cls = i <= fullHops ? `hop${Math.floor((i - 1) / n) % 2}` : 'hopR';
+      svg.append(node('path', { d: `M${x0} ${base - 2}Q${mid} ${base - 2 - rise * 2} ${x1} ${base - 2}`, class: `hop ${cls}` }));
+      if (gap >= 17 || i % n === 0 || i === hops) svg.append(node('text', { x: mid, y: base - rise - 8, 'text-anchor': 'middle', class: `c ${cls}` }, i));
+    }
+    if (hops || dot) svg.append(node('circle', { cx: X(dir * hops / n), cy: base, r: 7, class: 'acc' }));
+    for (const k of marks) {
+      const x = X(k.v), cls = k.kind === 'acc' ? 'acc' : `mk-${k.kind}`;
+      svg.append(node('circle', { cx: x, cy: base, r: 6.5, class: cls }));
+      svg.append(node('text', { x: Math.min(W - 40, Math.max(40, x)), y: base - 18, 'text-anchor': 'middle', class: `lb ${cls}` }, k.label));
+    }
   }
-  $$('[data-nl]').forEach(b => b.addEventListener('click', () => {
-    $$('[data-nl]').forEach(x => x.setAttribute('aria-pressed', 'false'));
-    b.setAttribute('aria-pressed', 'true');
-    const [p, q] = b.dataset.nl.split('/').map(Number);
-    placeFraction(p, q);
-  }));
+  const lineWatch = new ResizeObserver(es => es.forEach(e => drawLine(e.target)));
+  const setLine = (svg, o) => { const fresh = !lines.has(svg); lines.set(svg, o); drawLine(svg); if (fresh) lineWatch.observe(svg); };
+  $$('.nlw[data-a]').forEach(svg => {
+    const d = svg.dataset;
+    const marks = (d.marks || '').split(';').filter(Boolean).map(s => { const [v, label, kind] = s.split('|'); return { v: +v, label, kind }; });
+    setLine(svg, { a: +d.a, b: +d.b, n: +d.n, hops: +d.hops || 0, dir: +d.dir || 1, road: !!d.road, marks });
+  });
+
+  // walk along a fraction, one part at a time
+  const walk = { p: 7, q: 4, i: 0 };
+  function showWalk() {
+    const { p, q, i } = walk, a = Math.abs(p), dir = p < 0 ? -1 : 1, v = p / q, lo = Math.floor(v), hi = lo + 1;
+    setLine($('#walk'), { a: Math.min(0, lo), b: Math.max(0, hi), n: q, hops: i, parts: a, dir, dot: true });
+    $('#w-step').disabled = i >= a;
+    const s = p < 0 ? '−' : '', whole = Math.floor(a / q), rem = a % q;
+    if (i === 0) {
+      $('#w-out').innerHTML = BI(`Payda ${M(q)}: her birim ${M(q)} parçadır. Pay ${M(a)}: ${M(a)} parça ${dir > 0 ? 'sağa' : 'sola'} yürürüz.`,
+        `المقام ${M(q)}: هذا عدد الأجزاء في كل وحدة. البسط ${M(a)}: هذا عدد الأجزاء التي نمشيها إلى ${dir > 0 ? 'اليمين' : 'اليسار'}.`);
+    } else if (i < a) {
+      const w = Math.floor(i / q), r = i % q;
+      $('#w-out').innerHTML = BI(`${M(i)} parça yürüdün${w ? `: ${M(w)} tam${r ? ` ve ${M(r)} parça` : ''}` : ''}.`,
+        `عدد الأجزاء ${M(i)}${w ? `. وحدات كاملة: ${M(w)}${r ? `، وأجزاء باقية: ${M(r)}` : ''}` : ''}.`);
+    } else {
+      const head = whole ? M(`${s}${fr(a, q)} = ${s}<span class="mx">${whole}${fr(rem, q)}</span>`) : M(s + fr(a, q));
+      $('#w-out').innerHTML = BI(`Bitti! ${head}: ${M(sgn(lo))} ile ${M(sgn(hi))} arasındadır.`, `انتهينا! ${head}: يقع بين ${M(sgn(lo))} و ${M(sgn(hi))}.`);
+    }
+  }
+  $$('[data-w]').forEach(b => {
+    b.setAttribute('aria-pressed', String(b.dataset.w === '7/4'));
+    b.addEventListener('click', () => {
+      $$('[data-w]').forEach(x => x.setAttribute('aria-pressed', String(x === b)));
+      const [p, q] = b.dataset.w.split('/').map(Number);
+      Object.assign(walk, { p, q, i: 0 });
+      showWalk();
+    });
+  });
+  $('#w-step').addEventListener('click', () => { walk.i++; showWalk(); });
+  $('#w-all').addEventListener('click', () => { walk.i = Math.abs(walk.p); showWalk(); });
+  $('#w-reset').addEventListener('click', () => { walk.i = 0; showWalk(); });
+  showWalk();
 
   const score = (el, cards) => {
     const good = cards.filter(x => x.classList.contains('ok')).length, s = M(`${good}/${cards.length}`);
     el.innerHTML = BI(`Doğru: ${s}`, `صحيح: ${s}`);
   };
+
+  // 1.4 read the point
+  const rdCards = $$('.rd-card');
+  rdCards.forEach(c => $$('button', c).forEach(b => b.addEventListener('click', () => {
+    c.classList.remove('ok', 'no'); c.classList.add(b.dataset.right ? 'ok' : 'no');
+    $$('button', c).forEach(x => x.classList.toggle('win', !!x.dataset.right));
+    score($('#rd-out'), rdCards);
+  })));
 
   // 2.2 sonlu / devirli
   const sdCards = $$('.sd-card');
